@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from "../../images/logo.png"
+import logo from "../../assets/images/logo.png"
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
