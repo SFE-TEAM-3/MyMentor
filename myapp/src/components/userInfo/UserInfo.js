@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const UserInfo = ({item}) => {
-  const hired = item.opp.map(e => e.hired)
-  
   return (
     <div className='mb-2 userinfo px-5 pt-5'>
       {/*user information  */}
@@ -14,33 +12,15 @@ const UserInfo = ({item}) => {
                   <span className='data mb-2'>name  </span>
                   <span>{item.name}</span>
               </p>
-                  {
-                hired ? (
-                  <p className=' my-2 d-flex flex-column'>
+              <p className=' my-2 d-flex flex-column'>
                   <span className='data mb-2'>job title</span>
                   <span>{item.job_title}</span>
               </p>
-                ):(
-                  <p className=' my-2 d-flex flex-column'>
-                  <span className='data mb-2'>i'm a </span>
-                  <span>{item.graduate}</span>
-              </p>
-                )
-              }
 
-              {
-            hired ? (
               <p className=' my-2 d-flex flex-column'>
               <span className='data mb-2'>company</span>
               <span>{item.company}</span>
-          </p>
-            ):(
-              <p className=' my-2 d-flex flex-column'>
-                <span className='data mb-2'>university  </span>
-                <span>{item.university}</span>
               </p>
-            )
-          }
             </div>
             <div className='info my-2 d-flex flex-column'>
                 <p className=' my-2 d-flex flex-column'>

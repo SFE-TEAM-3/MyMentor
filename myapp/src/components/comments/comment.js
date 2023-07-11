@@ -58,7 +58,6 @@ const Comment = ({item, addReply}) => {
                    {item.children.length > 0 && (
                         item.children.map((child) => 
                          (
-                          // <Comment key={child.id} item= {child} addReply={addReply}/>
                           <div className="d-flex flex-start mt-4" key={child.id}>
                           <img className="rounded-circle shadow-1 me-3"
                             src={child.img} alt="avatar"
@@ -69,33 +68,11 @@ const Comment = ({item, addReply}) => {
                             <p className="mb-1">
                             {child.name}
                             </p>
-                            {/* {!showReplyBox && (
-                              <button
-                                type="button"
-                                className="ms-auto mt-3  color-secondary btn px-4 py-1 rounded-pill"
-                                onClick={() => {
-                                  setShowReplyBox(true);
-                                  setTimeout(() => parentEle.current.focus());
-                                }}
-                              >
-                                <FontAwesomeIcon icon={faReply} fade />
-                              </button>
-                            )} */}
+                            
                         </div>
                         <p className="small mb-0">
                         {child.body}
                         </p>
-                        {/* {showReplyBox && (
-                          <div className='row my-3'>
-                            <div className='col d-flex flex-column radius'>
-                                <input className='w-100 form-control rounded-pill ps-3'   ref={parentEle} onChange={(e) => {setReplyText(e.target.value);}} placeholder='leave your comment here'/>
-                                <button  onClick={() => {
-                                        addReply(child.id, replyText);
-                                        setShowReplyBox(false);
-                                        setReplyText("");}}
-                                        className='ms-auto mt-3  color-secondary btn px-4 py-1 rounded-pill'>send</button>
-                            </div>
-                          </div>)} */}
                       </div>
                     </div>
                         </div>
