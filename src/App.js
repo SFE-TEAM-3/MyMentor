@@ -1,11 +1,10 @@
-
-import Mentee from './Componets/Mentee';
-import Mentor from './Componets/Mentor';
-import Opportunities from './Componets/Opportunities';
-import Main from './Componets/main';
-import Selectlist from './Componets/selectList';
 import { Routes, Route } from "react-router-dom"
-import Requests from './Componets/Requests';
+import Mentee from './components/Mentee';
+import Mentor from './components/Mentor';
+import Opportunities from './components/Opportunities';
+import Selectlist from './components/selectList';
+import Requests from './components/Requests';
+import ContactUs from './components/ContactUs';
 function App() {
   return (
     <>
@@ -17,6 +16,7 @@ function App() {
           <Route path='/2' element={<Opportunities/>}/>
           <Route path='/3' element={<Requests/>}/>
         </Route>
+        <Route path='/contactus' element={<ContactUs/>}/>
       </Routes>
     </>
   );
