@@ -8,7 +8,7 @@ const Opp = ({item}) => {
   return (
     <div className='opp color-gray px-5 pt-5'>
          <div className={`box ${item.hired ? "closed" : "open"} px-4 py-2`}>
-            <span>{item.hired ? "closed mentoring opportunity" : "mentoring request"} </span>
+            <span>{item.hired ? "closed mentoring opportunity" : "open mentoring opportunity"} </span>
          </div>
          <div className='mb-5 text-capitalize'>
             <h3 className='fw-bold'>{item.title}</h3>

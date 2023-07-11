@@ -20,12 +20,8 @@ const UserInfo = ({item}) => {
                   <span className='data mb-2'>job title</span>
                   <span>{item.job_title}</span>
               </p>
-                ):(
-                  <p className=' my-2 d-flex flex-column'>
-                  <span className='data mb-2'>i'm a </span>
-                  <span>{item.graduate}</span>
-              </p>
-                )
+                ):''
+                
               }
 
               {
@@ -34,12 +30,7 @@ const UserInfo = ({item}) => {
               <span className='data mb-2'>company</span>
               <span>{item.company}</span>
           </p>
-            ):(
-              <p className=' my-2 d-flex flex-column'>
-                <span className='data mb-2'>university  </span>
-                <span>{item.university}</span>
-              </p>
-            )
+            ): ''
           }
             </div>
             <div className='info my-2 d-flex flex-column'>
