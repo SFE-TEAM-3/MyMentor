@@ -1,38 +1,219 @@
-.App {
-  text-align: center;
+/* Start General Statments */
+html{
+  --mainColor :#fed049;
+  --secondaryColor : #007580;
+  --red:#e01b24;
+  --grey:#fafafa;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../public/Fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+p{
+  margin: 0;
+}
+.bg-grayColor{
+  background-color: #c5c5c5;
+}
+.bg-secondaryColor{
+  background-color: var(--secondaryColor);
+}
+.bg-secondaryColor-op{
+  background-color:#0075807a
+}
+.text-main-color{
+  color: var(--mainColor);
+}
+.bg-main-color{
+  background-color: var(--mainColor);
+}
+.text-sec-color{
+  color: var(--secondaryColor);
+}
+.text-small{
+  font-size: 12px;
+}
+.outlint-focus{
+  border: 0;
+  border-bottom:1px solid var(--mainColor) ;
+  padding-bottom: 7px;
+}
+.outlint-focus:focus{
+  border: 0;
+  border-bottom:1px solid var(--mainColor) ;
+  outline: 0;
+}
+.custom-padding{
+  padding: 2px 30px;
+}
+/* End General Statments */
+/* Start Header  */
+/* Custom toogle  */
+.switch{
+  width: 60px;
+  height: 35px;
+  transition: 1s;
+}
+.switch span{
+  height:35px;
+  width: 35px;
+  transition: 1s;
+}
+/* Start Select box */
+/* Start Arrow */
+.arrow{
+  border: 7px solid transparent;
+  border-color: var(--secondaryColor) transparent transparent transparent;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* End   Arrow */
+.selecteList{
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background-image:none
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.selecteList-mentor{
+  background-image:none;
+  border-color: var(--mainColor);
+  background-color: #e6f2f2;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.selecteList-mentor:focus{
+  border-color: var(--mainColor);
+}
+.arrow-mentor{
+  position: relative;
+  left: -28px;
+}
+.selectBox{
+  border-bottom:1px solid white ;
+  padding-bottom: 7px;
+}
+.selectIcon-without-circle{
+  font-size: 24px;
+  color: white; 
+}
+.selectIcon-with-circle{
+  padding: 3px;
+  font-size: 22px;
   color: white;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
+.form-select:focus{
+  box-shadow: none;
+}
+/* End Select box */
+/* End Header  */
+/* Start Mentor */
+/* Start Custom check box */
+.form-check-input:checked{
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+.form-check-input:focus{
+  outline: 0;
+  box-shadow: none;
+}
+/* MenortPersons*/
+.mentorPersons{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 10px;
+}
+.mentorPersons1{
+  background-image: url(./images/man-gf3106a693_1280.jpg);
+}
+.mentorPersons2{
+  background-image: url(./images/cellular-g87a5ca821_1280.jpg);
+}
+.mentorPersons3{
+  background-image: url(./images/computer-g8dee30bb2_1280.jpg);
+}
+.mentorPersons4{
+  background-image: url(./images/640a44f99ef79f0018286fed.webp);
+}
+.mentorPersons5{
+  background-image: url(./images/10-Productivity-Tips-to-Help-You-Master-Microsoft-Office-365-.jpg);
+}
+.mentorPersons6{
+  background-image: url(./images/hilarious-office-worker-sitting-near-260nw-639637354.webp);
+}
+.mentorPersons7{
+  background-image: url(./images/man-holding-white-teacup-in-front-of-gray-laptop.jpg);
+}
+/* Mentee Persons */
+.menteePersons1{
+  background-image: url(./images/photo-1537511446984-935f663eb1f4.jpg);
+}
+.menteePersons2{
+  background-image: url(./images/istockphoto-1307615661-612x612.jpg);
+}
+.menteePersons3{
+  background-image: url(./images/man-gf4e58e0c3_1280.jpg);
+}
+.menteePersons4{
+  background-image: url(./images/Companies-Hiring-for-Remote-Work-From-Home-Jobs-Right-Now-1-1024x512.jpeg);
+}
+.menteePersons5{
+  background-image: url(./images/image.webp);
+}
+.menteePersons6{
+  background-image: url(./images/istockphoto-528215881-612x612.jpg);
+}
+.menteePersons7{
+  background-image: url(./images/istockphoto-522740003-170667a.jpg);
+}
+/* End Custom check box */
 
-.App-link {
-  color: #61dafb;
+/* Start Custom range */
+.multi-range-slider .thumb::before{
+  box-shadow: none;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  margin: -5px -12px;
 }
+.multi-range-slider .bar-left,.multi-range-slider .bar-right,.multi-range-slider .bar-inner{
+  box-shadow: none;
+  padding: 3px 0;
+  border: 0;
+}
+.multi-range-slider .thumb .caption *{
+  background-color: #e6f2f2;
+  box-shadow: none;
+  color: #000;
+  padding: 0px 20px;
+}
+/* End Custom range */
+/* End Mentor */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Start Media */
+@media (max-width: 575.98px) {
+  .responsive{
+    background-color: white;
   }
-  to {
-    transform: rotate(360deg);
+  .mobile-list{
+    background-color:#0075807a;
+    margin-top:5px ;
+  }
+  .moblie-font{
+    font-size: 10px;
+  }
+  .custom-padding{
+    padding: 2px 14px;
+    font-size: 12px;
+  }
+  .moblie-font-req{
+    font-size: 13px;
+  }
+  .text-respon{
+    color: #000 !important;
   }
 }
+/* End Media */
