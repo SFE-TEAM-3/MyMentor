@@ -17,24 +17,24 @@ const ContactUs = () => {
       <form className="p-3">
         <div className="form-row">
           <div className="form-group col-md-6">
-            <label for="inputEmail4">First Name</label>
+            <label htmlFor="inputEmail4">First Name</label>
             <input type="text" className="form-control " id="inputEmail4"/>
           </div>
           <div className="form-group col-md-6">
-            <label for="inputPassword4">Last Name</label>
+            <label htmlFor="inputPassword4">Last Name</label>
             <input type="text" className="form-control" id="inputPassword4"/>
           </div>
         </div>
         <div className="form-group">
-          <label for="inputAddress">Email</label>
+          <label htmlFor="inputAddress">Email</label>
           <input type="email" className="form-control" id="inputAddress"/>
         </div>
         <div className="form-group">
-          <label for="inputAddress2">Mobile Number</label>
+          <label htmlFor="inputAddress2">Mobile Number</label>
           <input type="text" className="form-control" id="inputAddress2"/>
         </div>
         <div className="form-group" style={{position: 'relative'}}>
-          <label for="exampleFormControlTextarea1">Message</label>
+          <label htmlFor="exampleFormControlTextarea1">Message</label>
           <textarea className="form-control message" id="exampleFormControlTextarea1" rows="3"></textarea>
           <div className="div-button">
             <button className="button"> Send <i className="fas fa-paper-plane"></i></button>
