@@ -92,67 +92,69 @@ export const Login = (props) => {
   // end sign in with facebook
 
   return (
-    <div className="auth-form-container">
-      <h2>Login</h2>
-      <form className="login-form d-flex flex-column" onSubmit={handleSubmit}>
-        <div className="pass-container">
-          <input
-            className="inp-field"
-            value={emial}
-            onChange={changeEmailInput}
-            type="email"
-            placeholder="Email"
-            id="email"
-            name="email"
-            required
-          />
-          <FaExclamationTriangle id="error1" className="error-triangle" />
+    <div className="parent">
+      <div className="auth-form-container">
+        <h2>Login</h2>
+        <form className="login-form d-flex flex-column" onSubmit={handleSubmit}>
+          <div className="pass-container">
+            <input
+              className="inp-field"
+              value={emial}
+              onChange={changeEmailInput}
+              type="email"
+              placeholder="Email"
+              id="email"
+              name="email"
+              required
+            />
+            <FaExclamationTriangle id="error1" className="error-triangle" />
+          </div>
+          <div className="pass-container">
+            <input
+              className="inp-field pass"
+              value={pass}
+              onChange={changePassInput}
+              type={passType}
+              placeholder="Password"
+              id="password"
+              name="password"
+              required
+            />
+            <span id="icon-pass-1" className="toggle" onClick={togglePassword}>
+              {show}
+            </span>
+            <FaExclamationTriangle id="error2" className="error-triangle" />
+          </div>
+          <button className="link-btn">Forgot your password ?</button>
+          <button
+            className="btn rounded-pill m-auto my-3 log"
+            type="submit"
+            onClick={checkAuth}
+          >
+            Login
+          </button>
+        </form>
+        <div className="login-social d-flex">
+          <p>Or login with </p>
+          <button className="soc-log-btn">
+            <FaLinkedinIn />
+          </button>
+          <button className="soc-log-btn" onClick={handleGoogleLogin}>
+            <FaGoogle />
+          </button>
+          <button className="soc-log-btn" onClick={handleFacebookLogin}>
+            <FaFacebookF />
+          </button>
         </div>
-        <div className="pass-container">
-          <input
-            className="inp-field pass"
-            value={pass}
-            onChange={changePassInput}
-            type={passType}
-            placeholder="Password"
-            id="password"
-            name="password"
-            required
-          />
-          <span id="icon-pass-1" className="toggle" onClick={togglePassword}>
-            {show}
-          </span>
-          <FaExclamationTriangle id="error2" className="error-triangle" />
+        <div className="switch">
+          <p>Not a member yet ? </p>
+          <button
+            className="link-btn"
+            onClick={() => props.onFormSwitch("register")}
+          >
+            click here to sign up
+          </button>
         </div>
-        <button className="link-btn">Forgot your password ?</button>
-        <button
-          className="btn rounded-pill m-auto my-3 log"
-          type="submit"
-          onClick={checkAuth}
-        >
-          Login
-        </button>
-      </form>
-      <div className="login-social d-flex">
-        <p>Or login with </p>
-        <button className="soc-log-btn">
-          <FaLinkedinIn />
-        </button>
-        <button className="soc-log-btn" onClick={handleGoogleLogin}>
-          <FaGoogle />
-        </button>
-        <button className="soc-log-btn" onClick={handleFacebookLogin}>
-          <FaFacebookF />
-        </button>
-      </div>
-      <div className="switch">
-        <p>Not a member yet ? </p>
-        <button
-          className="link-btn"
-          onClick={() => props.onFormSwitch("register")}
-        >
-          click here to sign up
-        </button>
       </div>
     </div>
   );
