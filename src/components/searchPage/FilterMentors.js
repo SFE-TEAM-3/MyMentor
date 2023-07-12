@@ -1,7 +1,7 @@
 import React from 'react';
-import img0 from "../assets/images/man-gf3106a693_1280.jpg"
-import img1 from "../assets/images/computer-g8dee30bb2_1280.jpg"
-import img2 from "../assets/images/cellular-g87a5ca821_1280.jpg"
+import img0 from "../../assets/images/man-gf3106a693_1280.jpg"
+import img1 from "../../assets/images/computer-g8dee30bb2_1280.jpg"
+import img2 from "../../assets/images/cellular-g87a5ca821_1280.jpg"
 import {BiSolidStar} from "react-icons/bi"
 const MentorsArr = [
     {

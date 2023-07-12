@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MultiRangeSlider, { ChangeResult } from "multi-range-slider-react";
+import MultiRangeSlider from "multi-range-slider-react";
 import RequestsFilter from './RequestsFilters';
 import {IoFilterOutline} from "react-icons/io5"
 

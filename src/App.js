@@ -1,12 +1,13 @@
 import { Routes, Route} from "react-router-dom"
 import Navbar from './components/navbar/Navbar'
-import Mentee from './components/Mentee';
-import Mentor from './components/Mentor';
+import Mentee from './components/searchPage/Mentee';
+import Mentor from './components/searchPage/Mentor';
 import Content from './components/content/Content'
-import Opportunities from './components/Opportunities';
-import Selectlist from './components/selectList';
-import Requests from './components/Requests';
-import ContactUs from './components/ContactUs';
+import Opportunities from './components/searchPage/Opportunities';
+import Selectlist from './components/searchPage/selectList';
+import Requests from './components/searchPage/Requests';
+import MentorReqForm from "./components/forms/MentorReqForm";
+import ContactUs from './components/contactPage/ContactUs';
 function App() {
   return (
     <div>
@@ -14,7 +15,7 @@ function App() {
       <Navbar/>
     </header> 
       <Routes >
-        <Route exact={true}  path="/" element={<Content/>}/>
+        <Route exact={true}  path="/" element={<MentorReqForm/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
         <Route path='' element={<Selectlist />}>
           <Route path='/mentor' element={<Mentor/>}/>

@@ -1,8 +1,8 @@
 import React from 'react';
-import img0 from "../assets/images/photo-1537511446984-935f663eb1f4.jpg"
-import img1 from "../assets/images/istockphoto-1307615661-612x612.jpg"
-import img2 from "../assets/images/man-gf4e58e0c3_1280.jpg"
-import img3 from "../assets/images/Companies-Hiring-for-Remote-Work-From-Home-Jobs-Right-Now-1-1024x512.jpeg"
+import img0 from "../../assets/images/photo-1537511446984-935f663eb1f4.jpg"
+import img1 from "../../assets/images/istockphoto-1307615661-612x612.jpg"
+import img2 from "../../assets/images/man-gf4e58e0c3_1280.jpg"
+import img3 from "../../assets/images/Companies-Hiring-for-Remote-Work-From-Home-Jobs-Right-Now-1-1024x512.jpeg"
 const MenteeArr = [
     {
         id:1,
