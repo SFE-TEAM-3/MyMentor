@@ -1,135 +1,11 @@
-
-/* Start General Statments */
-html{
-  --mainColor :#fed049;
-  --secondaryColor : #007580;
-  --red:#e01b24;
-  --grey:#fafafa;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../public/Fonts/Inter-VariableFont_slnt\,wght.ttf");
-}
-body{
-    font-family: 'Inter', sans-serif;
-    background-image: url(../src/assets/images/background_pattren.png);
-    background-size: cover;
-}
-p{
-  margin: 0;
-}
-.bg-grayColor{
-  background-color: #c5c5c5;
-}
-.bg-secondaryColor{
-  background-color: var(--secondaryColor);
-}
-.bg-secondaryColor-op{
-  background-color:#0075807a
-}
-.text-main-color{
-  color: var(--mainColor);
-}
-.bg-main-color{
-  background-color: var(--mainColor);
-}
-.text-sec-color{
-  color: var(--secondaryColor);
-}
-.text-small{
-  font-size: 12px;
-}
-.outlint-focus{
-  border: 0;
-  border-bottom:1px solid var(--mainColor) ;
-  padding-bottom: 7px;
-}
-.outlint-focus:focus{
-  border: 0;
-  border-bottom:1px solid var(--mainColor) ;
-  outline: 0;
-}
-.custom-padding{
-  padding: 2px 30px;
-}
-/* End General Statments */
-/* Start Header  */
-/* Custom toogle  */
-.switch{
-  width: 60px;
-  height: 35px;
-  transition: 1s;
-}
-.switch span{
-  height:35px;
-  width: 35px;
-  transition: 1s;
-}
-/* Start Select box */
-/* Start Arrow */
-.arrow{
-  border: 7px solid transparent;
-  border-color: var(--secondaryColor) transparent transparent transparent;
-  
-}
-
-/* End   Arrow */
-.selecteList{
-  border: none;
-  outline: none;
-  border-radius: 0;
-  background-image:none
-}
-.selecteList-mentor{
-  background-image:none;
-  border-color: var(--mainColor);
-  background-color: #e6f2f2;
-}
-.selecteList-mentor:focus{
-  border-color: var(--mainColor);
-}
-.arrow-mentor{
-  position: relative;
-  left: -28px;
-}
-.selectBox{
-  border-bottom:1px solid white ;
-  padding-bottom: 7px;
-}
-.selectIcon-without-circle{
-  font-size: 24px;
-  color: white; 
-}
-.selectIcon-with-circle{
-  padding: 3px;
-  font-size: 22px;
-  color: white;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-.form-select:focus{
-  box-shadow: none;
-}
-/* End Select box */
-/* End Header  */
-/* Start Mentor */
-/* Start Custom check box */
-.form-check-input:checked{
-  background-color: var(--mainColor);
-  border-color: var(--mainColor);
-}
-.App {
+/* start login */
+.parent {
   text-align: center;
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
 }
-/* .auth-form-container {
-  padding: 5rem;
-  border-radius: 10px;
-  margin: 0.5rem;
-} */
 .inp-field {
   border: none;
   border-bottom: 1px solid #fed049;
@@ -214,10 +90,10 @@ button {
   left: -5px;
 }
 /* .login-social svg:last-child {
-  background-color: #000000;
-  color: #fafafa;
-  padding: 0px;
-} */
+    background-color: #000000;
+    color: #fafafa;
+    padding: 0px;
+  } */
 .switch {
   display: flex;
   align-items: flex-start;
@@ -253,7 +129,7 @@ button {
   background-color: #007580;
   color: #fafafa;
   /* margin-right: 0px;
-  margin-bottom: 30px !important; */
+    margin-bottom: 30px !important; */
   margin: 0px;
 }
 @media (min-width: 567px) {
@@ -283,9 +159,9 @@ button {
 }
 .signup-social .soc-log-btn {
   /* background-color: #000000;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px; */
+    border-radius: 50%;
+    width: 32px;
+    height: 32px; */
   background-color: transparent;
   width: 32px;
   margin: 0 5px;
