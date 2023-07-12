@@ -11,23 +11,15 @@ import Selectlist from './components/searchPage/selectList';
 import Requests from './components/searchPage/Requests';
 import MentorReqForm from "./components/forms/MentorReqForm";
 import ContactUs from './components/contactPage/ContactUs';
-import { useState } from "react";
-function App() {
-  const [currentForm, setCurrentForm] = useState("login");
 
-  const toggleForm = (forName) => {
-    setCurrentForm(forName);
-  };
+function App() {
+  
   return (
     <div>
      <header>
       <Navbar/>
     </header> 
-    {/* {currentForm === "login" ? (
-        <Login onFormSwitch={toggleForm} />
-      ) : (
-        <Resgister onFormSwitch={toggleForm} />
-      )} */}
+    
       <Routes >
         <Route exact={true}  path="/" element={<MentorReqForm/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
