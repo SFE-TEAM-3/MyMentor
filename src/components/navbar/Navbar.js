@@ -45,7 +45,10 @@ const MyNavbar = () => {
            <Offcanvas.Body className='pt-sm-5 pt-lg-0 align-items-center'>
              <Nav className="ms-auto">
              <Form className="d-flex flex-column-reverse flex-sm-row me-2">
-               <div className='me-1  '>
+               <div className='me-1' style={{border: '1px solid #808080a3',
+                height:'50px',
+                borderTopLeftRadius: '20px',
+                borderBottomLeftRadius: '18px'}}>
                <Form.Select aria-label="Default select example" className='mySelect'>
                  <option>UI Designer</option>
                  <option>UI Designer</option>
@@ -54,19 +57,19 @@ const MyNavbar = () => {
                </Form.Select>
                </div>
                
-               <div className="d-flex search px-1 ">
+               <div className="d-flex search" style={{padding:'4px', border:'1px solid #808080a3'}}>
                <Form.Control
                    type="search"
                    placeholder="Search"
                    className="me-1"
                    aria-label="Search"
                  />
-                 <Button className='btn btn-dark rounded-circle me-1'>
+                 <Button className='btn btn-dark rounded-circle'>
                  <FontAwesomeIcon icon={faMagnifyingGlass} />
                  </Button>
                </div>
                </Form>
-               <Nav.Link to="/" className='user-item ' onClick={()=> setIsClick(!isClick)}>
+               <Nav.Link to="/" className='user-item ' onClick={()=> setIsClick(!isClick)} style={{paddingTop:'5px'}}>
                    <div className='color-gray rounded-pill text-capitalize fw-bold'>
                      <img src={user.img} alt='user-img' className='rounded-circle me-4' width={40} height={40}/>
                    </div>
@@ -80,30 +83,30 @@ const MyNavbar = () => {
                            <span className='d-block'>{user.job_title}</span>
                          </p>
                        </div>
-                         <Link to="/profile" class="nav-link btn d-block py-2 px-4 rounded-pill  mt-3 mx-auto color-secondary fw-bold text-capitalize btnUser" href="#"> view profile</Link>
+                         <Link to="/profile" className="nav-link btn d-block py-2 px-4 rounded-pill  mt-3 mx-auto color-secondary fw-bold text-capitalize btnUser" > view profile</Link>
                      </li>
-                     <li class="nav-item text-start d-lg-none">
-                       <Link to="/edit-profile" class="nav-link text-light text-capitalize fw-bold" >edit profile</Link>
+                     <li className="nav-item text-start d-lg-none">
+                       <Link to="/edit-profile" className="nav-link text-light text-capitalize fw-bold" >edit profile</Link>
                      </li>
                      {/* if user type mentee show some links , is not show others links */}
                      {user.userType === "mentee"? (
                       <>
-                      <li class="nav-item text-start d-lg-none">
-                       <Link to="/my-requests" class="nav-link text-light text-capitalize fw-bold" >my requests</Link>
+                      <li className="nav-item text-start d-lg-none">
+                       <Link to="/my-requests" className="nav-link text-light text-capitalize fw-bold" >my requests</Link>
                      </li>
-                     <li class="nav-item text-start d-lg-none">
-                       <Link to="/post-request" class="nav-link text-light text-capitalize fw-bold" >post a new request</Link>
+                     <li className="nav-item text-start d-lg-none">
+                       <Link to="/post-request" className="nav-link text-light text-capitalize fw-bold" >post a new request</Link>
                      </li>
-                     <li class="nav-item text-start d-lg-none">
-                       <Link to="/new-mentoring-request" class="nav-link text-light text-capitalize fw-bold">new mentoring request</Link>
+                     <li className="nav-item text-start d-lg-none">
+                       <Link to="/new-mentoring-request" className="nav-link text-light text-capitalize fw-bold">new mentoring request</Link>
                      </li>
-                     <li class="nav-item text-start d-lg-none">
-                       <Link to="/edit-request" class="nav-link text-light text-capitalize fw-bold" > edit request</Link>
+                     <li className="nav-item text-start d-lg-none">
+                       <Link to="/edit-request" className="nav-link text-light text-capitalize fw-bold" > edit request</Link>
                      </li>
                       </>
                      ): (
                       <>
-                      <li class="nav-item text-start d-lg-none">
+                      <li className="nav-item text-start d-lg-none">
                        <Link to="/my-opportunities" class="nav-link text-light text-capitalize fw-bold">my opportunities</Link>
                      </li>
                      <li class="nav-item text-start d-lg-none">

@@ -11,7 +11,7 @@ html{
 }
 body{
     font-family: 'Inter', sans-serif;
-    background-image: url(../images/background_pattren.png);
+    background-image: url(../src/assets/images/background_pattren.png);
     background-size: cover;
 }
 p{
@@ -219,3 +219,74 @@ p{
   }
 }
 /* End Media */
+/* contact us */
+label {
+  color: #007580;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.message {
+  resize: none;
+}
+
+.button {
+  border: 0;
+  border-radius: 20px;
+  background-color: #007580;
+  opacity: 0.9;
+  color: white;
+  padding: 5px 30px;
+  margin-left: auto;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  font-size: 18px;
+}
+
+.button i {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 12px;
+}
+
+.button:hover {
+  background-color: #007580;
+  opacity: 1;
+}
+
+#inputEmail4,#inputPassword4,#inputAddress,#inputAddress2,#exampleFormControlTextarea1 {
+  border: none !important;
+  border-bottom: 1px solid #FED049 !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #FED049 !important;
+}
+
+.div-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .div-button button {
+      padding: 7px 28px;
+      position: static;
+      font-size: 25px;
+      margin-top: 20px;
+  }
+
+  .div-button button i {
+      font-size: 20px;
+      padding: 0 15px;
+      padding-bottom: 2px;
+  }
+
+  .div-button {
+      text-align: center;
+  }
+}

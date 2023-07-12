@@ -11,7 +11,7 @@ const Selectlist = () => {
         <div className='main py-md-5 pt-2 bg-secondaryColor-op responsive'>
             <div className='container'>
                 {/* Ui Ux  */}
-                <div className='info   row  '>
+                <div className='row'>
                     <div className='col-md-3 col-12 mobile-list position-relative d-felx pe-5  justify-content-center align-items-center'>
                         <div className='selectBox m-4 m-md-0'>
                             <div className='d-inline-block me-2'><BsSearch className='selectIcon-with-circle mb-1'/></div>
@@ -22,15 +22,15 @@ const Selectlist = () => {
                     <div className='col-md-3 col-12  mobile-list position-relative pe-5'>
                         <div className='d-flex justify-content-center m-4 m-md-0 align-items-center selectBox'>
                             <div className='d-inline-block me-2 '><HiOutlineUserCircle className='selectIcon-without-circle mb-1 d-inline-block'/></div>
-                            <select id='selectedOne' defaultValue="0" 
+                            <select id='selectedOne' defaultValue="mentor" 
                                     onChange={(e)=>{
                                         navigate(`/${e.target.value}`, { replace: true })
                                 }} 
                                 className="form-select bg-transparent selecteList m-0 d-inline-block text-white p-0" aria-label="Default select example">
-                                <option value="0"    className='bg-secondaryColor-op p-2'>Mentor</option>
-                                <option value="1"   className='bg-secondaryColor-op p-2'>Mentee</option>
-                                <option value="2"   className='bg-secondaryColor-op p-2'>Opportunities</option>
-                                <option value="3"   className='bg-secondaryColor-op p-2'>Requests</option>
+                                <option value="mentor"    className='bg-secondaryColor-op p-2'>Mentor</option>
+                                <option value="mentee"   className='bg-secondaryColor-op p-2'>Mentee</option>
+                                <option value="opp"   className='bg-secondaryColor-op p-2'>Opportunities</option>
+                                <option value="reqs"   className='bg-secondaryColor-op p-2'>Requests</option>
                             </select>
                             <span className='arrow  d-inline-block mt-2'></span>
                         </div>

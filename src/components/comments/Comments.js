@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { comments } from '../../data/data'
+import { comments } from '../data/data'
 import Comment from './comment'
 const Comments = () => {
   const [inputComment, setInputComments] = useState('')   

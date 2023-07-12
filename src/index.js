@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { MemoryRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
- <MemoryRouter>
+ <BrowserRouter>
     <App />
- </MemoryRouter>
+ </BrowserRouter>
   </>
 );
 

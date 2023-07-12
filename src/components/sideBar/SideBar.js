@@ -19,7 +19,10 @@ const SideBar = () => {
      
         <Link to="/post-new-opportuiny" className='color-link text-decoration-none d-flex justify-content-between align-items-center mt-5'>
             post new opportuiny
-            <FontAwesomeIcon icon={faPlus} className='btn myBtn p-1'/>
+            <FontAwesomeIcon icon={faPlus} className='btn p-1' style={{marginRight: '60px',
+              backgroundColor: '#007580',
+              fontSize: '10px',
+              color:'white' }}/>
         </Link>
     </Nav>
       

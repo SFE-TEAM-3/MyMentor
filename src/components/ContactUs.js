@@ -15,7 +15,7 @@ const ContactUs = () => {
     <div className="col-md-1"></div>
     <div className="p-5  col-md-6 col-11 ml-md-5 m-auto  " style={{backgroundColor: '#FAFAFA'}}>
       <form className="p-3">
-        <div className="form-row">
+        <div className="form-row d-lg-flex gap-2">
           <div className="form-group col-md-6">
             <label htmlFor="inputEmail4">First Name</label>
             <input type="text" className="form-control " id="inputEmail4"/>

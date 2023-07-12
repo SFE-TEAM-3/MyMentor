@@ -57,7 +57,9 @@ const UserInfo = ({item}) => {
           <p className='w-75 user-des'>{item.des}</p>
           <div className='d-flex flex-column align-items-center justify-content-center userAvatar'>
           <img src={item.user_img} alt="avatar" width="100"  height="100" className="rounded-circle shadow-1-strong mb-3"/>
-          <Link to="/profile" className='profileBtn px-4 py-2 rounded-pill'>view profile</Link>
+          <Link to="/profile" className='profileBtn px-4 py-2 rounded-pill' style={{backgroundColor: '#80808082',
+          color: '#000000d6',
+          fontWeight: '500'}}>view profile</Link>
           </div>
         </div>
         </div>

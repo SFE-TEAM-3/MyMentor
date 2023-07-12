@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route} from "react-router-dom"
 import Navbar from './components/navbar/Navbar'
 import Mentee from './components/Mentee';
 import Mentor from './components/Mentor';
@@ -9,21 +9,35 @@ import Requests from './components/Requests';
 import ContactUs from './components/ContactUs';
 function App() {
   return (
-    <>
-   <header>
-    <Navbar/>
-   </header>
-      <Routes>
-        <Route path='' element={<Selectlist ></Selectlist>}>
-          <Route path='/:0?' element={<Mentor/>}/>
-          <Route path='/1' element={<Mentee/>}/>
-          <Route path='/2' element={<Opportunities/>}/>
-          <Route path='/3' element={<Requests/>}/>
-        </Route>
-        <Route path='/mentorOpp' element={<Content/>}/>
+    <div>
+     <header>
+      <Navbar/>
+    </header> 
+      <Routes >
+        <Route exact={true}  path="/" element={<Content/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
+        <Route path='' element={<Selectlist />}>
+          <Route path='/mentor' element={<Mentor/>}/>
+          <Route path='/mentee' element={<Mentee/>}/>
+          <Route path='/opp' element={<Opportunities/>}/>
+          <Route path='/reqs' element={<Requests/>}/>
+        </Route>
       </Routes>
-    </>
+     
+   
+
+      {/* <Routes>
+      <Route path='/' element={<ContactUs/>}/>
+      <Route path='/mentorOpp' element={<Content/>}/>
+        {/* <Route path='selectlist' element={<Selectlist />}>
+          <Route path='mentor' element={<Mentor/>}/>
+          <Route path='mentee' element={<Mentee/>}/>
+          <Route path='opp' element={<Opportunities/>}/>
+          <Route path='req' element={<Requests/>}/>
+        </Route> */}
+       
+      {/* </Routes> */}
+    </div>
   );
 }
 
