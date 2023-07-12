@@ -1,0 +1,216 @@
+
+.header{
+    display: flex;
+    padding: 1% 4%;
+}
+
+.leftHeader{
+flex: 2;
+/* background-color: rgb(156, 255, 222); */
+
+}
+.leftHeader img{
+    width: 25%;
+}
+
+/* ----------- */
+
+
+.rightHeader{
+display: flex;
+flex-direction: row-reverse;
+flex: 1;
+/* background-color: rgba(190, 168, 211, 0.827); */
+justify-content: end;
+align-items: center;
+justify-content: space-between;
+}
+.rightHeader .profilImg{
+      /* background-color: var(--Grey); */
+      background-color: lightgray;
+      width: 20%;
+      /* padding: 1%; */
+      border-radius: 55px;
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      -ms-border-radius: 55px;
+      -o-border-radius: 55px;
+}
+
+.rightHeader .rightHeader-BigBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width:  77%;
+    /* background-color: rgba(144, 128, 251, 0.862); */
+    /* padding: 1%; */
+    gap: 1%;
+}
+
+.rightHeader .profilImg .prof1{
+    background-color: var(--Secondary);
+    width: 55px;
+    height: 55px;
+    /* padding: 8%; */
+    border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+}
+
+.rightHeader .searchBox{
+         /*background-color: rgb(108, 59, 0);
+         *//*background-color: var(--Grey);
+         */background-color: rgb(239, 239, 239);
+         /*padding: 1%;
+         */width: 26%;
+         flex: 2;
+         padding: 1%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         border-radius: 0 50px 50px 0;
+         -webkit-border-radius: 0 50px 50px 0;
+         -moz-border-radius: 0 50px 50px 0;
+         -ms-border-radius: 0 50px 50px 0;
+         -o-border-radius: 0 50px 50px 0;
+}
+.rightHeader .searchBox .searchIcon{
+     background-color: rgb(0, 0, 0);
+     padding: 2% 3%;
+     /*flex: 1;
+     */border-radius:55px ;
+     -webkit-border-radius:5 ;
+     -moz-border-radius:5 ;
+     -ms-border-radius:5 ;
+     -o-border-radius:5 ;
+}
+.rightHeader .searchBox .searchIcon .SearchIconicon{
+    fill: var(--Grey);
+}
+.rightHeader .searchBox .searchText{
+padding: 1% 4%;
+/* background-color: rgb(255, 64, 31); */
+/* flex: 4; */
+}
+
+.rightHeader .selectBox{
+       padding: 1%;
+       width: 55%;
+       flex: 1;
+       /* background-color: rgb(121, 209, 180); */
+       border-radius: 55px 0 0 55px;
+       -webkit-border-radius: 55px 0 0 55px;
+       -moz-border-radius: 55px 0 0 55px;
+       -ms-border-radius: 55px 0 0 55px;
+       -o-border-radius: 55px 0 0 55px;
+}
+
+.rightHeader .selectBox .selectBoxSmall {
+/* padding: 4% 8%; */
+/* background-color: rgb(251, 199, 251); */
+/* text-transform: capitalize; */
+/* background-color: var(--Grey); */
+            background-color: rgb(239, 239, 239);
+            border-radius: 55px 0 0 55px;
+    -webkit-border-radius: 55px 0 0 55px;
+    -moz-border-radius: 55px 0 0 55px;
+    -ms-border-radius: 55px 0 0 55px;
+    -o-border-radius: 55px 0 0 55px;
+        /* padding: 5%; */
+}
+
+.rightHeader .selectBox .selectBoxSmall select{
+       border: none;
+       outline: none;
+       /* padding: 5%;*/
+        padding: 8.5%;
+       display: flex;
+       justify-content: space-between;
+       /* background-color: var(--Grey); */
+            background-color: rgb(239, 239, 239);
+       border-radius:55px 0 0 55px;
+       -webkit-border-radius:55px 0 0 55px;
+       -moz-border-radius:55px 0 0 55px;
+       -ms-border-radius:55px 0 0 55px;
+       -o-border-radius:55px 0 0 55px;
+       color: var(--Black);
+       cursor: pointer;
+}
+
+.rightHeader .selectBox .selectBoxSmall select option{
+    border: none;
+    outline: none;
+    /* padding: 2%; */
+    /* background-color: rgb(140, 112, 76); */
+    background-color: var(--Grey);
+}
+
+
+.repoNav{
+    display: none;
+}
+
+
+
+
+
+/* =====================================
+--------------------------------- MEdia screens --------------------------------- 
+===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+    .header {
+        padding: 0.5rem;
+        font-size: x-small;
+        /* display: none; */
+    }
+    .repoNav{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--Secondary);
+        width: 100%;
+        padding: 1%;
+        margin: 0 auto 11% auto;
+    }
+    .logo2{
+        /* flex: 2; */
+        width: 25%;
+        height: 50%;
+    }
+
+    .pars-icon{
+        fill: var(--Secondary);
+        /* flex: 1; */
+        font-size: 33px;
+        font-weight: bold;
+        width: 20%;
+        height: 40%;
+        cursor: pointer;
+    }
+
+    .leftHeader{
+        display: none;
+    }
+    
+    .leftHeader .logo1{
+        display: none;
+    }
+
+    .rightHeader{
+        display: none;
+    }
+
+
+
+
+}
+

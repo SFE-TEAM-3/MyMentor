@@ -1,0 +1,100 @@
+.SideNav {
+    width: 20%;
+    /* height: 260vh; */
+    position: absolute;
+   /* position: relative; */
+    /* height: 100vh; */
+    left: 4%;
+    top: 8%;
+    /* padding-top: 8%; */
+    margin-top: 8%;
+    margin-bottom: 8%;
+    display: flex;
+    /* justify-content: space-around; */
+    /* background-color: rgb(100, 122, 114); */
+    text-transform: capitalize;
+}
+/* .navleft{
+    position: relative;
+    bottom: 0;
+} */
+.navleft a {
+    display: flex;
+    padding: 1% 0;
+    /* background-color: rgb(29, 82, 64); */
+}
+.navleft .sidNavText1{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+    /* text-align: center; */
+    /* background-color: aqua; */
+    /* margin: 8% auto; */
+    margin-top: 14%;
+    position: relative;
+    left: 0;
+ }
+ .navleft .sidNavText1 h6{
+     display: flex;
+     /* flex: 4; */
+ }
+
+.navleft .sidNavText1 .PlusIcon{
+    background-color: var(--Secondary);
+    display: flex;
+    position: absolute;
+    right: -16%;
+    /* flex: 1; */
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 18px;
+    height:18px;
+    padding-bottom: 3px;
+    color: var(--Grey);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin-bottom: 4px;
+}
+ 
+.navleft a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+
+
+
+
+
+
+/* =====================================
+--------------------------------- MEdia screens --------------------------------- 
+===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+    .SideNav {
+        padding: 0.5rem;
+        font-size: x-small;
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+
+

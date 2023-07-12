@@ -1,0 +1,119 @@
+
+
+.Comments2-container{
+    /* background-color: rgb(0, 196, 131); */
+}
+.Comments2-top{
+    background-color: rgb(243, 243, 243) ;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.Comments2-btm{
+    /* background-color: rgb(139, 139, 255); */
+ }
+ .Comments2-btm-box{
+    /* background-color: rgb(255, 127, 104); */
+ }
+ .Comments2-btm-box button{
+margin-top: 2%;
+ }
+
+.Comments2-btm .Comments2-btm-box input:focus{
+    outline: none;
+    border: 0;
+}
+.Comments2-btm .Comments2-btm-box button{
+    width: 15%;
+    background-color: var(--Secondary);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    margin-left: auto;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.Comments2-btm-box button:hover {
+    background-color: var(--Primary);
+     color: var(--Secondary) !important;
+}
+.Comments2-top-box{
+    /* background-color: rgb(187, 67, 67); */
+    /* border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem; */
+    /* border-bottom: 1px solid rgb(179, 179, 179); */
+ }
+.right-Comments2-top-box{
+    /* background-color: springgreen; */
+    /* border-bottom: 1px solid rgb(179, 179, 179); */
+    /* border-bottom: 1px solid rgb(179, 179, 179); */
+}
+.Comments2-top-box-container{
+    /* background-color: rgb(147, 6, 6); */
+    margin: 1%;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+.subComnt{
+    /* background-color: pink; */
+    padding-left: 8%;
+}
+
+.left-Comments2-top-box-title input,
+.left-Comments2-top-box-title input::placeholder
+{
+     color: var(--Secondary);
+}
+ 
+.left-Comments2-top-box-title input{
+    background-color: unset;
+}
+.left-Comments2-top-box-comnt{
+    /* background-color: sandybrown; */
+}
+.left-Comments2-top-box-comnt input{
+    background-color: unset;
+}
+.left-Comments2-top-box{
+    /* background-color: seagreen; */
+}
+.left-Comments2-top-box-img{
+    background-color: #bcbcbc;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+ 
+/* ---------------start   media ---------------- */
+
+@media screen and (max-width:480px) {
+
+ 
+.Comments2-btm .Comments2-btm-box button {
+        width: 95%;
+        margin: 6% auto 0 auto;
+    }
+.left-Comments2-top-box-img {
+    width: 3rem;
+    height: 3rem;
+ 
+}
+
+
+}
+
+
