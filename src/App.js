@@ -1,19 +1,33 @@
+
 import { Routes, Route} from "react-router-dom"
 import Navbar from './components/navbar/Navbar'
 import Mentee from './components/searchPage/Mentee';
 import Mentor from './components/searchPage/Mentor';
 import Content from './components/content/Content'
+import { Login } from "./login";
+import { Resgister } from "./register";
 import Opportunities from './components/searchPage/Opportunities';
 import Selectlist from './components/searchPage/selectList';
 import Requests from './components/searchPage/Requests';
 import MentorReqForm from "./components/forms/MentorReqForm";
 import ContactUs from './components/contactPage/ContactUs';
+import { useState } from "react";
 function App() {
+  const [currentForm, setCurrentForm] = useState("login");
+
+  const toggleForm = (forName) => {
+    setCurrentForm(forName);
+  };
   return (
     <div>
      <header>
       <Navbar/>
     </header> 
+    {/* {currentForm === "login" ? (
+        <Login onFormSwitch={toggleForm} />
+      ) : (
+        <Resgister onFormSwitch={toggleForm} />
+      )} */}
       <Routes >
         <Route exact={true}  path="/" element={<MentorReqForm/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
@@ -38,8 +52,7 @@ function App() {
         </Route> */}
        
       {/* </Routes> */}
-    </div>
+</div>
   );
 }
-
 export default App;
