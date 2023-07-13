@@ -1,4 +1,5 @@
 import React, {useState } from 'react';
+import './searchPage.css'
 import FilterMentee from './menteeFilter';
 import {IoFilterOutline} from "react-icons/io5"
 

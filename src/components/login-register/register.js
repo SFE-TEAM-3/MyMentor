@@ -11,7 +11,7 @@ import {
   FaExclamationTriangle,
 } from "react-icons/fa";
 import { auth } from "./firebase";
-
+import { Link } from "react-router-dom";
 export const Resgister = (props) => {
   const [emial, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -56,20 +56,20 @@ export const Resgister = (props) => {
     let confirmPass = document.getElementById("conf-password");
     // console.log(email);
     // console.log(password);
-    if (name.value == "") {
+    if (name.value === "") {
       name.style.border = "thin solid #e01b24";
       document.getElementById("error3").style.display = "block";
     }
-    if (email.value == "") {
+    if (email.value === "") {
       email.style.border = "thin solid #e01b24";
       document.getElementById("error5").style.display = "block";
     }
-    if (password.value == "") {
+    if (password.value === "") {
       password.style.border = "thin solid #e01b24";
       document.getElementById("icon-pass-2").style.display = "none";
       document.getElementById("error4").style.display = "block";
     }
-    if (confirmPass.value == "") {
+    if (confirmPass.value === "") {
       confirmPass.style.border = "thin solid #e01b24";
       document.getElementById("icon-pass-3").style.display = "none";
       document.getElementById("error6").style.display = "block";
@@ -87,14 +87,14 @@ export const Resgister = (props) => {
   const changeNameInput = (e) => {
     setName(e.target.value);
     let name = document.getElementById("name");
-    if (name.value != "") {
+    if (name.value !== "") {
       document.getElementById("error3").style.display = "none";
     }
   };
   const changeEmailInput = (e) => {
     setEmail(e.target.value);
     let email = document.getElementById("email");
-    if (email.value != "") {
+    if (email.value !== "") {
       document.getElementById("error5").style.display = "none";
     }
   };
@@ -102,7 +102,7 @@ export const Resgister = (props) => {
     setPass(e.target.value);
     let password = document.getElementById("password");
 
-    if (password.value != "") {
+    if (password.value !== "") {
       document.getElementById("icon-pass-2").style.display = "block";
       document.getElementById("error4").style.display = "none";
     }
@@ -111,7 +111,7 @@ export const Resgister = (props) => {
     setConfPass(e.target.value);
     let confirmPassword = document.getElementById("password");
 
-    if (confirmPassword.value != "") {
+    if (confirmPassword.value !== "") {
       document.getElementById("icon-pass-3").style.display = "block";
       document.getElementById("error6").style.display = "none";
     }
@@ -214,11 +214,14 @@ export const Resgister = (props) => {
           </div>
           <div className="signup-social-holder">
             <button
-              className="btn rounded-pill my-3 reg"
+              // className="btn rounded-pill my-3 reg"
               type="submit"
               onClick={checkAuth}
             >
-              Sign Up
+            <Link to='/' className='btn rounded-pill my-3 reg'>
+               Sign Up
+            </Link>
+             
             </button>
             <div className="signup-social d-flex">
               <p>Or sign up with </p>

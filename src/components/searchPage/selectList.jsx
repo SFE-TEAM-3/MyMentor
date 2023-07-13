@@ -1,4 +1,5 @@
 import React from 'react';
+import './searchPage.css'
 import { BsSearch } from "react-icons/bs";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { IoBagRemoveSharp } from "react-icons/io5";

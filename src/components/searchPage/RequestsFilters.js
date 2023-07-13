@@ -1,4 +1,5 @@
 import React from 'react';
+import './searchPage.css'
 const filterArr = [
     {
         id:1,

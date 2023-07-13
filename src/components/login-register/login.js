@@ -3,7 +3,7 @@ import {
   GoogleAuthProvider,
   FacebookAuthProvider,
 } from "firebase/auth";
-import { React, useState, useEffect } from "react";
+import { React, useState} from "react";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -11,6 +11,7 @@ import {
   FaExclamationTriangle,
 } from "react-icons/fa";
 import { auth } from "./firebase";
+import { Link } from "react-router-dom";
 
 export const Login = (props) => {
   const [emial, setEmail] = useState("");
@@ -39,11 +40,11 @@ export const Login = (props) => {
     let password = document.getElementById("password");
     // console.log(email);
     // console.log(password);
-    if (email.value == "") {
+    if (email.value === "") {
       email.style.border = "thin solid #e01b24";
       document.getElementById("error1").style.display = "block";
     }
-    if (password.value == "") {
+    if (password.value === "") {
       password.style.border = "thin solid #e01b24";
       document.getElementById("icon-pass-1").style.display = "none";
       document.getElementById("error2").style.display = "block";
@@ -57,7 +58,7 @@ export const Login = (props) => {
   const changeEmailInput = (e) => {
     setEmail(e.target.value);
     let email = document.getElementById("email");
-    if (email.value != "") {
+    if (email.value !== "") {
       document.getElementById("error1").style.display = "none";
     }
   };
@@ -65,7 +66,7 @@ export const Login = (props) => {
     setPass(e.target.value);
     let password = document.getElementById("password");
 
-    if (password.value != "") {
+    if (password.value !== "") {
       document.getElementById("icon-pass-1").style.display = "block";
       document.getElementById("error2").style.display = "none";
     }
@@ -131,7 +132,10 @@ export const Login = (props) => {
             type="submit"
             onClick={checkAuth}
           >
-            Login
+            <Link to='/' className="btn text-white" >
+               Login
+            </Link>
+           
           </button>
         </form>
         <div className="login-social d-flex">

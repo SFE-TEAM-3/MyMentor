@@ -98,6 +98,7 @@ button {
   display: flex;
   align-items: flex-start;
   margin: 5px 0;
+  width: auto;
 }
 .switch .link-btn {
   background: none;

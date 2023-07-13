@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './searchPage.css'
 import MultiRangeSlider from "multi-range-slider-react";
 import OpportunitiesFilter from './OpportunitiesFilter';
 import {IoFilterOutline} from "react-icons/io5"

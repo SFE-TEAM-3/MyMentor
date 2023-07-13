@@ -1,4 +1,5 @@
 import React from 'react';
+import './searchPage.css'
 import img0 from "../../assets/images/photo-1537511446984-935f663eb1f4.jpg"
 import img1 from "../../assets/images/istockphoto-1307615661-612x612.jpg"
 import img2 from "../../assets/images/man-gf4e58e0c3_1280.jpg"

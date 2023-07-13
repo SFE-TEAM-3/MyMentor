@@ -8,6 +8,7 @@ import Opportunities from './components/searchPage/Opportunities';
 import Selectlist from './components/searchPage/selectList';
 import Requests from './components/searchPage/Requests';
 import MentorReqForm from "./components/forms/MentorReqForm";
+import Calendar from "./components/calender/Calender";
 import ContactUs from './components/contactPage/ContactUs';
 
 function App() {
@@ -20,8 +21,10 @@ function App() {
     
       <Routes >
         <Route path="/parent" element={<Parent/>}/>
-        <Route exact={true}  path="/" element={<MentorReqForm/>}/>
+        <Route path="/content" element={<Content/>}/>
+        <Route path="/requestform" element={<MentorReqForm/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
+        <Route path="/calender" element={<Calendar/>}/>
         <Route path='' element={<Selectlist />}>
           <Route path='/mentor' element={<Mentor/>}/>
           <Route path='/mentee' element={<Mentee/>}/>

@@ -57,7 +57,7 @@ const MyNavbar = () => {
                </Form.Select>
                </div>
                
-               <div className="d-flex search" style={{padding:'4px', border:'1px solid #808080a3'}}>
+               <div className="d-flex search " style={{padding:'4px', border:'1px solid #808080a3'}}>
                <Form.Control
                    type="search"
                    placeholder="Search"
@@ -79,11 +79,11 @@ const MyNavbar = () => {
                        <div className='d-flex align-items-center '>
                          <img src={user.img} alt='user-img' className="rounded-circle me-3"  width={60} height={60}/>
                          <p className='align-self-center fw-bold text-capitalize text-start'>
-                           <span className='d-block'>{user.username}</span>
-                           <span className='d-block'>{user.job_title}</span>
+                           <span className='d-block text-white'>{user.username}</span>
+                           <span className='d-block text-white'>{user.job_title}</span>
                          </p>
                        </div>
-                         <Link to="/profile" className="nav-link btn d-block py-2 px-4 rounded-pill  mt-3 mx-auto color-secondary fw-bold text-capitalize btnUser" > view profile</Link>
+                         <Link to="/profile" className="nav-link btn d-block py-2 px-4 rounded-pill  mt-3 mx-auto text-white fw-bold text-capitalize btnUser" > view profile</Link>
                      </li>
                      <li className="nav-item text-start d-lg-none">
                        <Link to="/edit-profile" className="nav-link text-light text-capitalize fw-bold" >edit profile</Link>
