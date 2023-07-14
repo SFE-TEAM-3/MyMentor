@@ -340,7 +340,7 @@ const PersonalInfo = () => {
   
  <div class="search-bar  d-lg-flex  d-none mt-4 " style={{width:'fit-content'}}>
     <input type="search" placeholder="search direct messages" id="message-search" onkeyup="searching()"/>
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass magnifying-glass-1"></i>
           </div>    
          
  
