@@ -7,12 +7,12 @@
   justify-content: center;
 }
 .inp-field {
-  border: none;
-  border-bottom: 1px solid #fed049;
-  padding: 5px;
-  margin-bottom: 20px;
-  min-width: 300px;
-  outline: none;
+  border: none !important;
+  border-bottom: 1px solid #fed049 !important;
+  padding: 5px !important;
+  margin-bottom: 20px !important;
+  min-width: 300px !important;
+  outline: none !important;
 }
 .inp-field::placeholder {
   color: #007580;
@@ -94,13 +94,13 @@ button {
     color: #fafafa;
     padding: 0px;
   } */
-.switch {
+.switch1 {
   display: flex;
   align-items: flex-start;
   margin: 5px 0;
   width: auto;
 }
-.switch .link-btn {
+.switch1 .link-btn {
   background: none;
   color: #007580;
 }

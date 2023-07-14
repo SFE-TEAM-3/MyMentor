@@ -1,5 +1,6 @@
 import React from 'react';
 import './searchPage.css'
+import { Link } from 'react-router-dom';
 const OpportunitiesArr = [
     {
         id:1,
@@ -122,7 +123,7 @@ const OpportunitiesFilter = (props) => {
                         </div>
                         <div className='req '>
                                 <button className=' custom-padding text-white text-respon  bg-main-color d-block border-0 small custom-padding rounded-pill'>Request</button>
-                                <button className='text-white text-respon bg-main-color  small d-block border-0 w-100 mt-1  rounded-pill'>View</button>
+                               <Link to='/oppShowpage'> <button className='text-white text-respon bg-main-color  small d-block border-0 w-100 mt-1  rounded-pill'>View</button></Link>
                         </div>
                     </div>
                     <div className='skills mt-3'>

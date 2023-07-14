@@ -36,7 +36,7 @@ const MyNavbar = () => {
               />
         </Link>
       </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none'}}/>
             {/* if user is active show form and menu */}
              {user.isActive ? (
               <>

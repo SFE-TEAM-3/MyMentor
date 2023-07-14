@@ -34,7 +34,7 @@ const Comments = () => {
       setInputComments("");
     }
   return (
-    <div className='px-5 ms-5 comments mt-4'>
+    <div className='px-5 comments mt-4'>
        {/* comment list  */}
         <div className="row color-gray radius p-3">
           {

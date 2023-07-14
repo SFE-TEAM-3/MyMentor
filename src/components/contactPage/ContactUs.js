@@ -1,5 +1,7 @@
 import React from 'react'
 import './contactPage.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 const ContactUs = () => {
   return (
 
@@ -37,7 +39,7 @@ const ContactUs = () => {
           <label htmlFor="exampleFormControlTextarea1">Message</label>
           <textarea className="form-control message" id="exampleFormControlTextarea1" rows="3"></textarea>
           <div className="div-button">
-            <button className="button"> Send <i className="fas fa-paper-plane"></i></button>
+            <button className="button3"> Send <FontAwesomeIcon icon={faPaperPlane} /></button>
           </div>
         </div>
        </form> 

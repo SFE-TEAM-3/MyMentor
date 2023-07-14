@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 import { auth } from "./firebase";
 import { Link } from "react-router-dom";
-export const Resgister = (props) => {
+export const Resgister = () => {
   const [emial, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [name, setName] = useState("");
@@ -56,15 +56,15 @@ export const Resgister = (props) => {
     let confirmPass = document.getElementById("conf-password");
     // console.log(email);
     // console.log(password);
-    if (name.value === "") {
+    if (name.value == "") {
       name.style.border = "thin solid #e01b24";
       document.getElementById("error3").style.display = "block";
     }
-    if (email.value === "") {
+    if (email.value == "") {
       email.style.border = "thin solid #e01b24";
       document.getElementById("error5").style.display = "block";
     }
-    if (password.value === "") {
+    if (password.value == "") {
       password.style.border = "thin solid #e01b24";
       document.getElementById("icon-pass-2").style.display = "none";
       document.getElementById("error4").style.display = "block";
@@ -154,7 +154,7 @@ export const Resgister = (props) => {
                 type="text"
                 placeholder="Name"
                 id="name"
-                name="name"
+                // name="name"
               />
               <FaExclamationTriangle id="error3" className="error-triangle" />
             </div>
@@ -167,7 +167,7 @@ export const Resgister = (props) => {
                 type={passType}
                 placeholder="Password"
                 id="password"
-                name="password"
+                // name="password"
               />
               <span
                 id="icon-pass-2"
@@ -187,7 +187,7 @@ export const Resgister = (props) => {
                 type="email"
                 placeholder="Email"
                 id="email"
-                name="email"
+                // name="email"
               />
               <FaExclamationTriangle id="error5" className="error-triangle" />
             </div>
@@ -200,7 +200,7 @@ export const Resgister = (props) => {
                 type={passType2}
                 placeholder="Confirm password"
                 id="conf-password"
-                name="conf-password"
+                // name="conf-password"
               />
               <span
                 id="icon-pass-3"
@@ -218,7 +218,7 @@ export const Resgister = (props) => {
               type="submit"
               onClick={checkAuth}
             >
-            <Link to='/' className='btn rounded-pill my-3 reg'>
+            <Link to='/wizard' className='btn rounded-pill my-3 reg'>
                Sign Up
             </Link>
              
@@ -245,7 +245,7 @@ export const Resgister = (props) => {
           {/* <input type="checkbox" value={"Accept"} id="accept" name="accept" /> */}
           <div className="form-check">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               value=""
               id="accept"

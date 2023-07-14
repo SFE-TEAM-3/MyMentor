@@ -17,7 +17,7 @@ const SideBar = () => {
       
         <Link to="/terms-and-privacy" className='color-link text-decoration-none'>terms and privacy</Link>
      
-        <Link to="/post-new-opportuiny" className='color-link text-decoration-none d-flex justify-content-between align-items-center mt-5'>
+        <Link to="/oppform" className='color-link text-decoration-none d-flex justify-content-between align-items-center mt-5'>
             post new opportuiny
             <FontAwesomeIcon icon={faPlus} className='btn p-1' style={{marginRight: '60px',
               backgroundColor: '#007580',

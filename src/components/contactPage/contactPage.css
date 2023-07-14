@@ -11,7 +11,7 @@ label {
 
 p {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .message {
@@ -72,7 +72,7 @@ select {
     cursor: pointer;
 }
 
-.button {
+.button3 {
     border: 0;
     border-radius: 20px;
     background-color: #007580;
@@ -80,11 +80,14 @@ select {
     color: white;
     padding: 5px 30px;
     font-size: 18px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 
 
-button:hover {
+.button3:hover {
     opacity: 1;
 }
 
@@ -116,14 +119,16 @@ margin-top: 20px;
 }
 
 @media screen and  (max-width: 720px) {
-    .div-button button {
-        padding: 7px 150px;
-        position: static;
-        font-size: 25px;
+    .div-button .button3 {
+        position: relative;
+        font-size: 17px;
+        right: 40%;
     }
 
     .div-button {
         text-align: center;
+        position: relative;
+        left: 10%;
     }
 
     .plus-icon {

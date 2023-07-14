@@ -1,5 +1,6 @@
 import React from 'react';
 import './searchPage.css'
+import { Link } from 'react-router-dom';
 const filterArr = [
     {
         id:1,
@@ -101,8 +102,8 @@ const RequestsFilter = (props) => {
                          </div>
                          <div className='req flex-column-reverse d-flex flex-md-column justify-content-between' style={{flexBasis:"50%"}}>
                              <div className='text-end moblie-font-req'>
-                                 <button className='me-2 custom-padding text-respon text-white bg-main-color d-inline-block border-0 small custom-padding rounded-pill'>View details</button>
-                                 <button className=' bg-main-color text-white  text-respon custom-padding small d-inline-block border-0  mt-1  rounded-pill'>Mentor</button>
+                               <Link to="/reqShowpage">  <button className='me-2 custom-padding text-respon text-white bg-main-color d-inline-block border-0 small custom-padding rounded-pill'>View details</button>
+                                 <button className=' bg-main-color text-white  text-respon custom-padding small d-inline-block border-0  mt-1  rounded-pill'>Mentor</button></Link>
                              </div>
                              <div className='d-flex justify-content-around mb-4 moblie-font-req mt-4 mt-md-0'> 
                                  <div >

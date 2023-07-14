@@ -134,12 +134,12 @@ export const Login = (props) => {
           >
             <Link to='/' className="btn text-white" >
                Login
-            </Link>
+             </Link>
            
           </button>
         </form>
         <div className="login-social d-flex">
-          <p>Or login with </p>
+          <p style={{fontSize:'18px'}}>Or login with </p>
           <button className="soc-log-btn">
             <FaLinkedinIn />
           </button>
@@ -150,8 +150,8 @@ export const Login = (props) => {
             <FaFacebookF />
           </button>
         </div>
-        <div className="switch">
-          <p>Not a member yet ? </p>
+        <div className="switch1">
+          <p style={{fontSize:'15px'}}>Not a member yet ? </p>
           <button
             className="link-btn"
             onClick={() => props.onFormSwitch("register")}

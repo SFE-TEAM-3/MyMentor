@@ -8,7 +8,7 @@ import './content.css'
 
 const Content = () => {
   return (
-    <div className='content p-2 '>
+    <div className='p-2'>
         <Container>
             <Row className='mt-3'>
                 <Col lg="3" className='d-none d-lg-block'>
