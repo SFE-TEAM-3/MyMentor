@@ -116,7 +116,7 @@ const OpportunitiesFilter = (props) => {
              return <div className='col-md-6 col-12 pt-4'  key={OpportOne.id}>
             <div className='border   rounded-3 p-3' style={{borderColor:"#c3c3c3"}}>
                     <div className='d-flex justify justify-content-between '>
-                        <div className='info'>
+                        <div >
                             <h3 className='small fw-bold moblie-font' >Website UI design implementaion</h3>
                             <p className='small text-muted moblie-font' >Get Mentored by : <span className='fw-bold'>{OpportOne.name}</span></p>
                         </div>
