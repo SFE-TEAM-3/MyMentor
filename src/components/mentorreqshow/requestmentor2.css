@@ -316,8 +316,8 @@ padding-bottom: 4%;
     display: flex;
     /* gap: 2%; */
     align-items: flex-start;
-    justify-content: start;
-    flex-direction: column ;
+    justify-content: flex-start;
+    flex-direction:column ;
     /* background-color: rgb(255, 171, 255); */
     margin-right: auto;
     width: 96%;

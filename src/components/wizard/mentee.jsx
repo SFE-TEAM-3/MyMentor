@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { GiCancel } from "react-icons/gi";
 import { BiError } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Mentee = ({ options, choose, setChoose }) => {
   const [file, setFile] = useState(null);
@@ -184,9 +185,11 @@ const Mentee = ({ options, choose, setChoose }) => {
             </div>
             <div className="col-sm-6">
               <div className="button1 end  btn-1 ">
-                <button type="submit" className="submit">
-                  Submit
-                </button>
+              <Link to='/'>
+              <button type="button" className="submit">
+                Submit
+              </button>
+              </Link>
               </div>
             </div>
           </div>

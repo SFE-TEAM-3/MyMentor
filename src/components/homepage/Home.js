@@ -22,7 +22,7 @@ function Home({ data }) {
     <>
       <div id="home">
         <div className="main">
-          <div className="mentor-search">
+          <div className="mentor-search" style={{marginTop:'6%'}}>
             <Container>
               <Row>
                 <Col>

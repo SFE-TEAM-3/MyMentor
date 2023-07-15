@@ -22,6 +22,7 @@ import MentoringOpportunityForm from "./components/forms/MentorOppForm";
 import MentoringRequest from "./components/mentorOpp/MentoringRequest";
 import Footer from "./components/footer/Footer";
 import Profile from "./components/userprofile/Profile";
+import ForgetPassword from "./components/login-register/ForgetPassword";
 function App() {
   
   return (
@@ -33,6 +34,7 @@ function App() {
       <Routes >
         {/* login */}
         <Route path="/parent" element={<Parent/>}/>
+        <Route path='/forgetpassword' element={<ForgetPassword/>}/>
         {/* end login pages */}
         {/* registeration wizard */}
           <Route path="/wizard" element={<Wizard/>}/>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { GiCancel } from "react-icons/gi";
 import { BiError } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Mentor = ({ options, choose, setChoose }) => {
   const [file, setFile] = useState(null);
@@ -151,9 +152,12 @@ const Mentor = ({ options, choose, setChoose }) => {
             </div>
             <div className="handle"></div>
             <div className="button1 end">
-              <button type="button" className="submit">
+              <Link to='/'>
+              <button type="button" className="submit" onClick={handleSubmit}>
                 Submit
               </button>
+              </Link>
+             
             </div>
           </div>
         </div>
