@@ -1,0 +1,20 @@
+
+/* Start General Statments */
+html{
+  --mainColor :#fed049;
+  --secondaryColor : #007580;
+  --red:#e01b24;
+  --grey:#fafafa;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../public/Fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url(../src/assets/images/background_pattren.png);
+    background-size: contain;
+    background-repeat: repeat;
+    
+}
