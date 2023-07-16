@@ -92,7 +92,7 @@ const RequestsFilter = (props) => {
              return <div key={filterOne.id}  className='col-12 pt-4'  >
              <div className='rounded p-4' style={{backgroundColor:"#e6f2f2"}}>
                      <div className='d-flex flex-column  flex-md-row justify justify-content-between '>
-                         <div className='info ' style={{flexBasis:"50%"}}>
+                         <div  style={{flexBasis:"50%"}}>
                              <h3 className=' fw-bold h5 text-sec-color moblie-font-req'>Front end development</h3>
                              <p className='small fw-bold  '>{filterOne.name} <span className='text-sec-color w-50'> is looking for a mentor</span></p>
                              <p className='small lh-sm  mt-4 mb-md-3 mb-1'>

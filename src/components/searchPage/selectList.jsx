@@ -16,7 +16,7 @@ const Selectlist = () => {
                     <div className='col-md-3 col-12 mobile-list position-relative d-felx pe-5  justify-content-center align-items-center'>
                         <div className='selectBox m-4 m-md-0'>
                             <div className='d-inline-block me-2'><BsSearch className='selectIcon-with-circle mb-1'/></div>
-                            <p className='m-0 d-inline-block text-white'>UI UX designer</p>
+                            <div className='m-0 d-inline-block text-white'>UI UX designer</div>
                         </div>
                     </div>
                     {/* Select 1*/}
