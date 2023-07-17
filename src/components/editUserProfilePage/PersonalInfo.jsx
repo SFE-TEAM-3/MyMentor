@@ -1,6 +1,6 @@
 import React , { useState} from 'react';
 import "./PersonalInfo.css";
-import SidaNav2 from '../mentorreqshow/SidaNav2';
+import SidaNav2 from '../requestShowPage/SidaNav2';
 import hero from "../../assets/images/colored_background.jpg";
 import Trush from '@iconscout/react-unicons/icons/uil-trash';
 // import Arr from '@iconscout/react-unicons/icons/uil-arrow-circle-up';
@@ -10,7 +10,7 @@ import Cam from '@iconscout/react-unicons/icons/uil-camera';
 import Calendr from '@iconscout/react-unicons/icons/uil-calender';
 import Mail from '@iconscout/react-unicons/icons/uil-fast-mail';
 import {Upload} from 'antd';
-import "./data.json"
+import './data.json'
  
 // ====================================================
  
