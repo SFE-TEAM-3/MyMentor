@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './searchPage.css'
 import { BsSearch } from "react-icons/bs";
 import { HiOutlineUserCircle } from "react-icons/hi";
@@ -7,6 +7,7 @@ import {  Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 const Selectlist = () => {
     const navigate = useNavigate()
+    const [selectValue,setselectValue] = useState("mentor")
     return ( 
         <> 
         <div className='main py-md-5 pt-2 bg-secondaryColor-op responsive'>
@@ -16,16 +17,17 @@ const Selectlist = () => {
                     <div className='col-md-3 col-12 mobile-list position-relative d-felx pe-5  justify-content-center align-items-center'>
                         <div className='selectBox m-4 m-md-0'>
                             <div className='d-inline-block me-2'><BsSearch className='selectIcon-with-circle mb-1'/></div>
-                            <p className='m-0 d-inline-block text-white'>UI UX designer</p>
+                            <div className='m-0 d-inline-block text-white'>UI UX designer</div>
                         </div>
                     </div>
                     {/* Select 1*/}
                     <div className='col-md-3 col-12  mobile-list position-relative pe-5'>
                         <div className='d-flex justify-content-center m-4 m-md-0 align-items-center selectBox'>
                             <div className='d-inline-block me-2 '><HiOutlineUserCircle className='selectIcon-without-circle mb-1 d-inline-block'/></div>
-                            <select id='selectedOne' defaultValue="mentor" 
+                            <select id='selectedOne' defaultValue={selectValue}
                                     onChange={(e)=>{
                                         navigate(`/${e.target.value}`, { replace: true })
+                                        setselectValue(()=>e.target.value)
                                 }} 
                                 className="form-select bg-transparent selecteList m-0 d-inline-block text-white p-0" aria-label="Default select example">
                                 <option value="mentor"    className='bg-secondaryColor-op p-2'>Mentor</option>

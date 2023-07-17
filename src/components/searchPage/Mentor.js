@@ -21,7 +21,7 @@ const Mentor = () => {
     
     return ( 
         <>
-            <div className="mentor p-md-5 p-4">
+            <div className=" p-md-5 p-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 col-12">
