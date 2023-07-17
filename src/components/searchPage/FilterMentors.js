@@ -92,7 +92,7 @@ const FilterMenotrs = (props) => {
             return <div className='col-md-4 col-12 pt-4' key={mentorOne.id}>
                 {/* Mentor Persons */}
                 <div className={`mentorPersons mentorPersons${mentorOne.id} position-relative`}>
-                    <div className=' info bg-white d-inline-flex  justify-content-center align-items-center rounded position-absolute bottom-0 start-0 ms-2 mb-2 p-1'>
+                    <div className='bg-white d-inline-flex justify-content-center align-items-center rounded position-absolute bottom-0 start-0 ms-2 mb-2 p-1'>
                         <BiSolidStar className='text-main-color  text-small'/> 
                         <span className='fw-bold  text-small'>{mentorOne.rating}</span>
                         <span className='text-muted text-small '>({mentorOne.reveiew} reveiews)</span>

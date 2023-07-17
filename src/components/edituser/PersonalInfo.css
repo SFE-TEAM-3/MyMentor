@@ -568,7 +568,7 @@ font-weight: 600;
  padding: 5px 13px;
 
 }
-input[type="search"]{
+.search-bar input{
  
   border: none;
 
