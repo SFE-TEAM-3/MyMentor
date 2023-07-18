@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import './wizard.css';
 import Mentor from './mentor';
-
-
 import  Mentee  from './mentee';
 
 const Wizard = () => {

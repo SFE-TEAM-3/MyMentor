@@ -19,6 +19,7 @@ const register = async function (req, res) {
         await newUser.save()
         res.status(200).send([newUser, token])
     } catch (e) {
+        console.log(e)
         return res.status(400).json(e.message)
     }
 }
