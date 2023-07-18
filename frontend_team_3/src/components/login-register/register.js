@@ -25,7 +25,26 @@ export const Resgister = () => {
   const [passType2, setPassType2] = useState("password");
 
   const handleSubmit = (e) => {
+    let name = document.getElementById("name");
+    let password = document.getElementById("password");
+    let email = document.getElementById("email");
+    let confirmPass = document.getElementById("conf-password");
     e.preventDefault();
+    if(name.value !=="" && email.value !=="" && password.value !=="" && confirmPass.value === password.value){
+      const payload = { name: name.value, email: email.value }
+      
+      const postUser = async() => {
+        try{
+          const res = await axios.post(`${Localhost}/api/auth/signup`, {...payload, password: password.value})
+          console.log('user have been added successfully: ' + JSON.stringify(res.data.token))
+          dispatch(signup({...payload})) 
+          navigate("/wizard", {replace: true})
+        }catch(e){
+          console.log('unable to add data: '+e.message)
+        }
+      }
+      postUser()
+    }
   };
 
   const togglePassword = () => {
@@ -84,21 +103,6 @@ export const Resgister = () => {
       email.style.borderBottom = "thin solid #fed049";
       password.style.borderBottom = "thin solid #fed049";
       confirmPass.style.borderBottom = "thin solid #fed049";
-    }
-    if(name.value !=="" && email.value !=="" && password.value !=="" && confirmPass.value === password.value){
-      const payload = { name: name.value, email: email.value }
-      
-      const postUser = async() => {
-        try{
-          const res = await axios.post(`${Localhost}/api/auth/signup`, {...payload, password: password.value})
-          // console.log('user have been added successfully: ' + res)
-          dispatch(signup({...payload})) 
-          navigate("/wizard", {replace: true})
-        }catch(e){
-          console.log('unable to add data: '+e.message)
-        }
-      }
-      postUser()
     }
   };
   const changeNameInput = (e) => {

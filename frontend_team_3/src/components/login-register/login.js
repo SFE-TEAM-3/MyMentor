@@ -1,26 +1,43 @@
 import {
-  signInWithPopup,
-  GoogleAuthProvider,
-  FacebookAuthProvider,
+  signInWithPopup, GoogleAuthProvider, FacebookAuthProvider,
 } from "firebase/auth";
 import { React, useState} from "react";
 import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaGoogle,
-  FaExclamationTriangle,
+  FaFacebookF, FaLinkedinIn, FaGoogle, FaExclamationTriangle,
 } from "react-icons/fa";
 import { auth } from "./firebase";
-import { Link } from "react-router-dom";
+// new
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import axios from "axios";
+import { signup } from "../../features/user";
+import { Localhost }from "../../config/api";
 
 export const Login = (props) => {
-  const [emial, setEmail] = useState("");
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [show, setShow] = useState("Show");
   const [passType, setPassType] = useState("password");
 
   const handleSubmit = (e) => {
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
     e.preventDefault();
+    if(email.value !=="" && password.value !==""){
+      const loginUser = async() => {
+        try{
+          const res = await axios.post(`${Localhost}/api/auth/login`, {email: email.value, password: password.value})
+          console.log('user have been added successfully: ' + JSON.stringify(res.data.token))
+          dispatch(signup({email: email.value})) 
+          navigate("/", {replace: true})
+        }catch(e){
+          console.log('unable to add data: '+e.message)
+        }
+      }
+      loginUser()
+    }
   };
 
   const togglePassword = () => {
@@ -38,8 +55,6 @@ export const Login = (props) => {
   const checkAuth = () => {
     let email = document.getElementById("email");
     let password = document.getElementById("password");
-    // console.log(email);
-    // console.log(password);
     if (email.value === "") {
       email.style.border = "thin solid #e01b24";
       document.getElementById("error1").style.display = "block";
@@ -54,7 +69,7 @@ export const Login = (props) => {
       email.style.borderBottom = "thin solid #fed049";
       password.style.borderBottom = "thin solid #fed049";
     }
-  };
+  }
   const changeEmailInput = (e) => {
     setEmail(e.target.value);
     let email = document.getElementById("email");
@@ -100,7 +115,7 @@ export const Login = (props) => {
           <div className="pass-container">
             <input
               className="inp-field"
-              value={emial}
+              value={email}
               onChange={changeEmailInput}
               type="email"
               placeholder="Email"
@@ -132,9 +147,9 @@ export const Login = (props) => {
             type="submit"
             onClick={checkAuth}
           >
-            <Link to='/' className="btn text-white" >
+            <p className="btn text-white" >
                Login
-             </Link>
+             </p>
            
           </button>
         </form>
