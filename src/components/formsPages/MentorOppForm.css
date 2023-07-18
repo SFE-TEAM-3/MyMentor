@@ -23,10 +23,21 @@
 .add-opp {
   background-color: #fafafa;
   color: #007580;
+  margin-top: 0;
+}
+.add-opp-del{
+/* background-color: #fafafa; */
+  color: #007580;
+  margin-top: 0;
+ }
+.add-opp-postin {
+ position: relative;
+ top: -14px;
+ /* padding: 1%; */
 }
 .mentoring-opportunity-container {
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius:20px ;
   min-height: 1000px;
   width: 100%;
 }
@@ -34,14 +45,17 @@
   background-color: #007580;
   font-size: 16px;
   font-weight: bold;
-  padding: 10px 50px 0px 100px;
+  /* padding: 10px 50px 0px 100px;
+    */
+    padding: 0.2rem 5rem;
   float: right;
   border-radius: 0px 20px 0px 80px;
   color: #fafafa;
 }
 .mentoring-opportunity-form {
   padding-top: 60px;
-}
+ }
+ 
 .mentor-oppor-label,
 .mentor-oppor-input,
 .mentor-oppor-label1,
@@ -53,10 +67,16 @@
   color: #007580;
   font-weight: bold;
   display: block;
-  padding: 9px;
+  padding: 11px;
   margin: 5px 20px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0 ;
   border: 0px;
+  -webkit-border-radius: 10px 10px 0 0 ;
+  -moz-border-radius: 10px 10px 0 0 ;
+  -ms-border-radius: 10px 10px 0 0 ;
+  -o-border-radius: 10px 10px 0 0 ;
+  text-transform: capitalize;
+  
 }
 .mentor-oppor-label1,
 .mentor-oppor-input1,
@@ -66,14 +86,21 @@
   display: inline;
   margin: 15px 20px;
 }
+.mentor-span0Color {
+color: #79B4B9;
+}
 textarea {
   width: 90%;
+  resize: none;
+  border: none;
+  pointer-events: none;
+  overflow: hidden;
 }
-/* .mentor-imputa {
-  display: inline-block;
-  font-size: 25px;
-  color: #007580;
-} */
+ option,  select {
+  outline: none;
+  border: none;
+}
+ 
 .checkboxtext {
   font-size: 110%;
   display: inline;
@@ -82,13 +109,10 @@ textarea {
 .par-opp {
   position: relative;
 }
-.mentor-oppor-span {
-  /* position: absolute;
-  top: -10px;
-  left: 25px; */
-}
+ 
 .par-opp input {
-  width: 80%;
+  width: 90%;
+  margin-right: 9.5rem ;
 }
 .par-opp select {
   width: 50%;
@@ -113,7 +137,7 @@ textarea {
 .mentor-select1,
 .mentor-select2,
 .mentor-select3 {
-  width: 23%;
+  width: 24%;
   max-width: 400px;
 }
 .mentor-select4 {
@@ -139,34 +163,96 @@ textarea {
 .mgh-inp {
   width: 17px !important;
   height: 17px !important;
-  background-color: #fed049;
-  border: none;
+  /* background-color: #ffffff; */
+ background-color: #fed049;
+  border: 2px solid #fed049 !important;
 }
 .mgh-inp1 {
   position: relative;
-  top: 20px;
+  top: 25px;
+  left: -2%;
 }
 .mgh-inp2 {
   position: relative;
-  top: 45px;
+  top: 21px;
+  left: -2%;
 }
 .form-check-input {
   width: 20px !important;
   height: 20px !important;
   color: white;
-}
+ }
 .form-check-input:checked {
   background-color: #fed049 !important;
   color: #fafafa !important;
   outline: none !important;
+  border: 2px solid #fed049;
 }
+
+.color-bgd-223 {
+      background-color: white !important;
+      opacity: 100% !important;
+      color: #79B4B9 !important;
+}
+.mentor-oppor-input1-sizing{
+  margin-left: 1%;
+}
+.par-opp input{
+  width: 90%;
+}
+.mentor-oppor-input1-sizing-amount{
+  margin: -3%;
+}
+
 /* start media query mob screen */
 @media (max-width: 567px) {
+
+  .mentoring-opportunity-div1 {
+   padding: 0.2rem 1.4rem;
+    /* padding: 0.2rem 1.8rem; */
+   width: 98%;
+   text-align: right;
+  }
   .border-2 {
     border-width: 2px !important;
-    width: 80%;
+    width: 80% !important ;
     margin-bottom: 20px;
+    background-color: white !important;
   }
+  .border-22{
+    width: 90% !important;
+    /* margin-right: 30%; */
+  }
+  .border-223{
+    width: 100% !important;
+    background-color: white !important;
+    opacity: 100% !important;
+    color: #79B4B9 !important;
+  }
+
+.par-opp input {
+   width: 80%;
+   margin-right:unset;
+}
+.par-opp input {
+  width: 80%;
+}
+.mentor-oppor-input1-sizing {
+  margin-left: 6%;
+}
+
+ .mentor-span0Color{
+  width: 100%;
+ /* margin-right: auto; */
+  margin-right:30%;
+}
+.mentor-span0011{
+  width: 100%;
+ /* margin-right: auto; */
+  margin-right: 56%;
+
+}
+
   .lab-1 {
     display: inline-block;
     margin-bottom: -9px;

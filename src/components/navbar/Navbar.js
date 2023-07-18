@@ -46,9 +46,8 @@ const MyNavbar = () => {
              <Nav className="ms-auto">
              <Form className="d-flex flex-column-reverse flex-sm-row me-2">
                <div className='me-1' style={{border: '1px solid #808080a3',
-                height:'50px',
                 borderTopLeftRadius: '20px',
-                borderBottomLeftRadius: '18px'}}>
+                borderBottomLeftRadius: '18px',height:'39px'}}>
                <Form.Select aria-label="Default select example" className='mySelect'>
                  <option>UI Designer</option>
                  <option>UI Designer</option>
@@ -65,7 +64,8 @@ const MyNavbar = () => {
                    aria-label="Search"
                  />
                  <Button className='btn btn-dark rounded-circle'>
-                 <FontAwesomeIcon icon={faMagnifyingGlass} />
+                 <FontAwesomeIcon icon={faMagnifyingGlass} style={{fontSize: '13px',
+                  marginBottom: '6px'}} />
                  </Button>
                </div>
                </Form>

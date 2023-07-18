@@ -15,7 +15,8 @@ const MentorReqForm = ({ setCount }) => {
         <div className="left-col">
           <div
             className="left-content d-flex flex-column"
-            style={{ gap: "5px" }}
+            style={{ gap: "5px",
+            marginTop: '37%'}}
           >
             <h5>View Mentoring Opportunity</h5>
             <h5>Settings</h5>

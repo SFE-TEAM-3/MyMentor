@@ -1,4 +1,4 @@
-.row{
+/* .row{
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
@@ -12,13 +12,13 @@ label {
 p {
     font-weight: bold;
     font-size: 13px;
-}
+} */
 
 .message {
     resize: none;
 }
 
-input[type="radio"] {
+/* input[type="radio"] {
     appearance: none !important;
     width: 15px !important;
     height: 15px !important;
@@ -30,15 +30,15 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
     background-color: #FED049 !important;
-}
+} */
 
-::placeholder,
+/* ::placeholder,
 select {
     color: #007580 !important;
     opacity: 0.5 !important;
     font-weight: 600 !important;
     font-size: 19px !important;
-}
+} */
 
 .form-title {
     border: 2px solid #007580;
