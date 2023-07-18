@@ -17,10 +17,10 @@ const register = async function (req, res) {
         })
         const token = await newUser.generateToken()
         await newUser.save()
-        res.status(200).send([newUser, token])
+        res.status(200).json({user: newUser, token})
     } catch (e) {
         console.log(e)
-        return res.status(400).json(e.message)
+        return res.status(400).json({e})
     }
 }
 
@@ -32,18 +32,18 @@ const login = async function (req, res) {
         }
         const user = await User.findByCredentials(req.body.email, req.body.password);
         const token = await user.generateToken()
-        res.status(200).send([user.toJson(), token])
+        res.status(200).json({user, token})
     }
     catch (e) {
-        res.status(400).send(e.message)
+        res.status(400).json({e})
     }
 }
 const getUser = async function (req, res) {
     try {
         const user = await User.findOne({ _id: req.params.id }).populate("messages");
-        res.status(200).json(user);
+        res.status(200).json({user});
     } catch (e) {
-        res.status(400).send(e.message)
+        res.status(400).json({e})
     }
 };
 
@@ -56,7 +56,7 @@ const logout = async function (req, res) {
         await req.user.save()
         res.status(200).send('successfully logged out')
     } catch (e) {
-        res.status(500).send(e.message)
+        res.status(500).json({e})
     }
 }
 
@@ -66,7 +66,7 @@ const logoutAll = async function (req, res) {
         await req.user.save()
         res.status(200).send('successfully logged out from all devices')
     } catch (e) {
-        res.status(500).send(e.message)
+        res.status(500).json({e})
     }
 }
 
