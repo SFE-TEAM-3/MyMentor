@@ -4,8 +4,18 @@ import { BiSolidDownArrow } from "react-icons/bi";
 import { GiCancel } from "react-icons/gi";
 import { BiError } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+// import axios from "axios";
+// import { signup } from "../../features/user";
+// import { Localhost }from "../../config/api";
+
+// /api/v1/mentorProfile post with headers
 
 const Mentee = ({ options, choose, setChoose }) => {
+  const user = useSelector(state => state.user.value);
+  // const dispatch = useDispatch();
+  console.log('profile page: the user token is', user.token)
+
   const [file, setFile] = useState(null);
   const [errors, setErros] = useState({
     expertise: false,

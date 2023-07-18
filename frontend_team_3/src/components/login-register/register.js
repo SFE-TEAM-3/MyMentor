@@ -1,18 +1,20 @@
-import {
-  signInWithPopup,
-  GoogleAuthProvider,
-  FacebookAuthProvider,
+import { 
+  signInWithPopup, GoogleAuthProvider, FacebookAuthProvider,
 } from "firebase/auth";
 import { React, useState } from "react";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaGoogle,
-  FaExclamationTriangle,
+import { 
+  FaFacebookF, FaLinkedinIn, FaGoogle, FaExclamationTriangle, 
 } from "react-icons/fa";
 import { auth } from "./firebase";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import axios from "axios";
+import { signup } from "../../features/user";
+import { Localhost }from "../../config/api";
+
 export const Resgister = () => {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
   const [emial, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [name, setName] = useState("");
@@ -56,15 +58,15 @@ export const Resgister = () => {
     let confirmPass = document.getElementById("conf-password");
     // console.log(email);
     // console.log(password);
-    if (name.value == "") {
+    if (name.value === "") {
       name.style.border = "thin solid #e01b24";
       document.getElementById("error3").style.display = "block";
     }
-    if (email.value == "") {
+    if (email.value === "") {
       email.style.border = "thin solid #e01b24";
       document.getElementById("error5").style.display = "block";
     }
-    if (password.value == "") {
+    if (password.value === "") {
       password.style.border = "thin solid #e01b24";
       document.getElementById("icon-pass-2").style.display = "none";
       document.getElementById("error4").style.display = "block";
@@ -82,6 +84,21 @@ export const Resgister = () => {
       email.style.borderBottom = "thin solid #fed049";
       password.style.borderBottom = "thin solid #fed049";
       confirmPass.style.borderBottom = "thin solid #fed049";
+    }
+    if(name.value !=="" && email.value !=="" && password.value !=="" && confirmPass.value === password.value){
+      const payload = { name: name.value, email: email.value }
+      
+      const postUser = async() => {
+        try{
+          const res = await axios.post(`${Localhost}/api/auth/signup`, {...payload, password: password.value})
+          // console.log('user have been added successfully: ' + res)
+          dispatch(signup({...payload})) 
+          navigate("/wizard", {replace: true})
+        }catch(e){
+          console.log('unable to add data: '+e.message)
+        }
+      }
+      postUser()
     }
   };
   const changeNameInput = (e) => {
@@ -154,7 +171,6 @@ export const Resgister = () => {
                 type="text"
                 placeholder="Name"
                 id="name"
-                // name="name"
               />
               <FaExclamationTriangle id="error3" className="error-triangle" />
             </div>
@@ -214,13 +230,12 @@ export const Resgister = () => {
           </div>
           <div className="signup-social-holder">
             <button
-              // className="btn rounded-pill my-3 reg"
               type="submit"
               onClick={checkAuth}
             >
-            <Link to='/wizard' className='btn rounded-pill my-3 reg'>
+            <p className='btn rounded-pill my-3 reg'>
                Sign Up
-            </Link>
+            </p>
              
             </button>
             <div className="signup-social d-flex">
