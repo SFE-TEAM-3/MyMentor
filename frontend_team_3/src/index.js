@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
 import userReducer from "./features/user";
 import profileReducer from "./features/profile";
-import { Provider } from 'react-redux';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// pass collection of reducers
 const store = configureStore({
   reducer: {
     user: userReducer,
