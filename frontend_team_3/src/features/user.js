@@ -8,10 +8,10 @@ export const userSlice = createSlice({
     name: "user",
     initialState: { value: initialStateValue },
     reducers: {
-        signup: (state, action)=>{
-            state.value = {...state.value , ...action.payload}
+        signup: (state, action) => {
+            state.value = { ...state.value, ...action.payload }
         },
-        logout: (state, action)=>{
+        logout: (state, action) => {
             state.value = initialStateValue
         }
     }

@@ -1,27 +1,30 @@
-
 .icon1 {
     color: darkcyan;
 }
+
 .dff {
     padding-top: 150px;
     padding-left: 40px;
     font-weight: 600;
     visibility: visible;
 }
-.mentor{
-    margin-top:50px;
-    font-weight:700;
-    color:darkcyan;
+
+.mentor {
+    margin-top: 50px;
+    font-weight: 700;
+    color: darkcyan;
 }
 
-.mentoringsection{
-    width:75%;
+.mentoringsection {
+    width: 75%;
     margin-top: -17%;
     margin-left: 300px;
 }
-.hidden{
-    display:none;
+
+.hidden {
+    display: none;
 }
+
 .published1 {
     /* padding-right: 45px; */
     display: flex;
@@ -32,6 +35,7 @@
     font-size: 18px;
     margin: 20px auto;
 }
+
 .d1 {
     display: flex;
     width: 650px;
@@ -39,6 +43,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .b1 {
     display: flex;
     width: 150px;
@@ -46,6 +51,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .btn1 {
     color: white;
     background-color: gold;
@@ -54,11 +60,14 @@
     border-style: none;
     border-radius: 30px;
 }
-.buttons1 ,.buttons2 ,.buttons3{
-    display:flex;
-    width:300px;
-    justify-content:center;
-    align-items:center;
+
+.buttons1,
+.buttons2,
+.buttons3 {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -74,18 +83,30 @@
     font-size: 18px;
     align-items: center;
 }
-.disapear1, .disapear2, .disapear3,
-.disapear1_close, .disapear2_close, .disapear3_close,
-.disapear1_inprogress, .disapear2_inprogress, .disapear3_inprogress,
-.disapear1_publish2, .disapear2_publish2, .disapear3_publish2{
+
+.disapear1,
+.disapear2,
+.disapear3,
+.disapear1_close,
+.disapear2_close,
+.disapear3_close,
+.disapear1_inprogress,
+.disapear2_inprogress,
+.disapear3_inprogress,
+.disapear1_publish2,
+.disapear2_publish2,
+.disapear3_publish2 {
     padding: 10px;
 }
-.disapear1_inprogress{
+
+.disapear1_inprogress {
     margin: 0 20px;
 }
+
 .details1 {
     position: relative;
 }
+
 .img1 {
     width: 75px;
     height: 75px;
@@ -94,12 +115,15 @@
     top: -12px;
     left: 23px;
 }
-.details1 p{
-    padding-left:136px;
-    margin:0px;
+
+.details1 p {
+    padding-left: 136px;
+    margin: 0px;
     width: max-content;
 }
-.btn2, .btn3 {
+
+.btn2,
+.btn3 {
     width: 107px;
     height: 39px;
     color: white;
@@ -107,12 +131,15 @@
     border-style: none;
     margin: 7px;
 }
-.btn2{
-    background-color:darkcyan;
+
+.btn2 {
+    background-color: darkcyan;
 }
-.btn3{
-    background-color:crimson;
+
+.btn3 {
+    background-color: crimson;
 }
+
 .developer2 {
     padding-right: 45px;
     margin-top: 20px;
@@ -135,10 +162,12 @@
     top: 27px;
     left: 23px;
 }
+
 .details2 p {
     padding-left: 136px;
-    margin:0px;
+    margin: 0px;
 }
+
 .developer3 {
     padding-right: 45px;
     margin-top: 20px;
@@ -150,7 +179,7 @@
     font-size: 18px;
     position: relative;
     align-items: center;
-    margin-bottom:60px;
+    margin-bottom: 60px;
 }
 
 .img3 {
@@ -161,13 +190,15 @@
     top: 27px;
     left: 23px;
 }
+
 .details3 p {
     padding-left: 136px;
-    margin:0px;
+    margin: 0px;
 }
-.cyan{
-    color:darkcyan;
-    font-weight:600;
+
+.cyan {
+    color: darkcyan;
+    font-weight: 600;
 }
 
 /************************************************************************/
@@ -197,6 +228,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 /************************************************************************/
 .inprogress {
     padding-right: 45px;
@@ -224,6 +256,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 /**********************************************************************/
 .published2 {
     padding-right: 45px;
@@ -255,6 +288,7 @@
 .trash {
     color: darkcyan;
 }
+
 .updated {
     display: flex;
     width: 230px;
@@ -262,9 +296,10 @@
     padding: 5px;
     padding-left: 0px;
     color: #006d77;
-    font-weight:500;
-    font-size:15px;
+    font-weight: 500;
+    font-size: 15px;
 }
+
 /* @media only screen and (max-width: 1000px) {
 
     .dff {
@@ -335,9 +370,10 @@
 
 /* @media only screen and (max-width:567px) */
 @media only screen and (max-width: 567px) {
-    aside{
+    aside {
         display: none;
     }
+
     .dff {
         display: none;
         /* padding-top: 150px;
@@ -345,18 +381,27 @@
         font-weight: 600;
         visibility: hidden !important; */
     }
+
     .mentoringsection {
         width: 100%;
         margin: 20px auto;
-       
-    }
-.b1 , .b2 ,.b3{ 
-    justify-content:space-between;
-    width:100%;
-}
 
-    .closed22, .developer1, .developer2,
-    .developer3, .published1, .published2, .inprogress {
+    }
+
+    .b1,
+    .b2,
+    .b3 {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .closed22,
+    .developer1,
+    .developer2,
+    .developer3,
+    .published1,
+    .published2,
+    .inprogress {
         display: flex;
         padding: 16px;
         flex-direction: column;
@@ -365,38 +410,56 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .published1, .published2, .closed22, .inprogress {
+
+    .published1,
+    .published2,
+    .closed22,
+    .inprogress {
         background-color: #f7f7f7eb;
     }
-.d1, .d2 ,.d3{
-    display:flex;
-    flex-direction:column;
-    width:308px;
-}
-.img1{
-    top: 10px;
-    left: -71px;
-}
-.img2 {
-    top: 20px;
-    left: 14px;
-}
-.img3 {
-    top: 20px;
-    left: 14px;
-}
-.details1 p, .details2 p, .details3 p {
-    padding-left:33px;
-    margin: 0px;
-}
-.bb1 ,.bb2 ,.bb3{
-    width:100%;
-    justify-content:flex-end;
-}
-.content{
-    padding-top:0px;
-    width: 100%;
-}
+
+    .d1,
+    .d2,
+    .d3 {
+        display: flex;
+        flex-direction: column;
+        width: 308px;
+    }
+
+    .img1 {
+        top: 10px;
+        left: -71px;
+    }
+
+    .img2 {
+        top: 20px;
+        left: 14px;
+    }
+
+    .img3 {
+        top: 20px;
+        left: 14px;
+    }
+
+    .details1 p,
+    .details2 p,
+    .details3 p {
+        padding-left: 33px;
+        margin: 0px;
+    }
+
+    .bb1,
+    .bb2,
+    .bb3 {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .content {
+        padding-top: 0px;
+        width: 100%;
+    }
+
     .hidden {
         display: block;
         font-weight: 700;
@@ -404,11 +467,15 @@
         padding-right: 269px;
         font-size: 18px;
     }
-    .status1,.status2,.status3{
-        padding-right:85px;
+
+    .status1,
+    .status2,
+    .status3 {
+        padding-right: 85px;
     }
-    .updated{
-        width:266px;
+
+    .updated {
+        width: 266px;
     }
 }
 

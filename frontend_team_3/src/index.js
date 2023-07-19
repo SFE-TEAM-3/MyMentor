@@ -2,7 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import { configureStore } from "@reduxjs/toolkit";
@@ -18,15 +17,12 @@ const store = configureStore({
     profile: profileReducer
   }
 })
-
 root.render(
-  <>
+  <React.StrictMode>
     <BrowserRouter>
-        <Provider store = { store }>
-          <App />
-        </Provider>
+      <Provider store={store}>
+        <App />
+      </Provider>
     </BrowserRouter>
-  </>
-);
-
-
+  </React.StrictMode>
+)

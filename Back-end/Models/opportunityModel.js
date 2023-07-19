@@ -13,7 +13,7 @@ const opportunitySchema = mongoose.Schema({
         required: [true, 'Description is required'],
     },
     certificate: {
-        type: Boolean, 
+        type: Boolean,
         default: false
     },
     duration: {
@@ -30,29 +30,29 @@ const opportunitySchema = mongoose.Schema({
         default: false
     },
     paid: {
-        isPaid: {type: Boolean, default: false},
-        amount: {type: Number, default: 0},
-        currency: {type: String, default: "EGP"}
+        isPaid: { type: Boolean, default: false },
+        amount: { type: Number, default: 0 },
+        currency: { type: String, default: "EGP" }
     },
-    responsibilities: [{type: String}],
-    requirements: [{type: String}],
-    expOutcome: [{type: String}],
+    responsibilities: [{ type: String }],
+    requirements: [{ type: String }],
+    expOutcome: [{ type: String }],
     owner: {
         type: mongoose.Schema.Types.ObjectId,
         required: true
     },
     progress: {
-      type: String, default: "open",
-      enum: ["open", "in progress", "close"],
+        type: String, default: "open",
+        enum: ["open", "in progress", "close"],
     },
     acceptedBy: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
     },
-},{ timestamp: true }
+}, { timestamp: true }
 );
 
-opportunitySchema.methods.isBusy= function(){
+opportunitySchema.methods.isBusy = function () {
 }
 // create model
 const Opportunity = mongoose.model('opportunity', opportunitySchema);
