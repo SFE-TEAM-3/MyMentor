@@ -1,5 +1,5 @@
 import Resgister from './register'
-import Login from './login'
+import { Login } from './login'
 import ResetPassword from './ResetPassword'
 import ContactUs from './contactPage/ContactUs'
 import Mentee from './menteeProfile'

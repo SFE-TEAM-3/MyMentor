@@ -209,7 +209,6 @@ const Resgister = () => {
                                 type="email"
                                 placeholder="Email"
                                 id="email"
-                            // name="email"
                             />
                             <FaExclamationTriangle id="error5" className="error-triangle" />
                         </div>

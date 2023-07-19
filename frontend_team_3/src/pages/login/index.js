@@ -2,19 +2,19 @@ import {
   signInWithPopup, GoogleAuthProvider, FacebookAuthProvider,
 } from "firebase/auth";
 import './style.css'
-import { React, useState } from "react";
+import { React, useState} from "react";
 import {
   FaFacebookF, FaLinkedinIn, FaGoogle, FaExclamationTriangle,
 } from "react-icons/fa";
 import { auth } from "../../components/firebase/firebase";
 // new
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 import { signup } from "../../features/user";
-import { Localhost } from "../../config/api";
+import { Localhost }from "../../config/api";
 
-const Login = () => {
+export const Login = (props) => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const [email, setEmail] = useState("");
@@ -26,16 +26,15 @@ const Login = () => {
     let email = document.getElementById("email");
     let password = document.getElementById("password");
     e.preventDefault();
-
-    if (email.value !== "" && password.value !== "") {
-      const loginUser = async () => {
-        try {
-          const res = await axios.post(`${Localhost}/api/auth/login`, { email: email.value, password: password.value })
+    if(email.value !=="" && password.value !==""){
+      const loginUser = async() => {
+        try{
+          const res = await axios.post(`${Localhost}/api/auth/login`, {email: email.value, password: password.value})
           console.log('user have been added successfully: ' + JSON.stringify(res.data.token))
-          dispatch(signup({ email: email.value }))
-          navigate("/", { replace: true })
-        } catch (e) {
-          console.log('unable to add data: ' + e.message)
+          dispatch(signup({email: email.value})) 
+          navigate("/", {replace: true})
+        }catch(e){
+          console.log('unable to add data: '+e.message)
         }
       }
       loginUser()
@@ -150,13 +149,13 @@ const Login = () => {
             onClick={checkAuth}
           >
             <p className="btn text-white" >
-              Login
-            </p>
-
+               Login
+             </p>
+           
           </button>
         </form>
         <div className="login-social d-flex">
-          <p style={{ fontSize: '18px' }}>Or login with </p>
+          <p style={{fontSize:'18px'}}>Or login with </p>
           <button className="soc-log-btn">
             <FaLinkedinIn />
           </button>
@@ -168,19 +167,16 @@ const Login = () => {
           </button>
         </div>
         <div className="switch1">
-          <p style={{ fontSize: '15px' }}>Not a member yet ? </p>
-          <Link
-            to={'/register'}
+          <p style={{fontSize:'15px'}}>Not a member yet ? </p>
+          <button
             className="link-btn"
+            onClick={() => props.onFormSwitch("register")}
           >
             click here to sign up
-          </Link>
+          </button>
         </div>
       </div>
     </div>
   );
 };
-
 // justify-content-sm-center
-
-export default Login
