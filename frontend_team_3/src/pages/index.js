@@ -4,6 +4,7 @@ import ResetPassword from './ResetPassword'
 import ContactUs from './contactPage/ContactUs'
 import Mentee from './menteeProfile'
 import Mentor from './mentorProfile'
+import Home from './Home/Home'
 import Opportunities from './search/oppertiunity'
 import Requests from './search/Request'
 import ShowOpp from './showOpp'
@@ -17,7 +18,7 @@ import Selectlist from './search/selectItems'
 import NotFound from './NotFound'
 
 export {
-    ContactUs, Resgister, Login, ResetPassword, NotFound,
+    ContactUs, Resgister, Login, ResetPassword, NotFound, Home,
     Mentee, Mentor, UpdateProfile, MentorReqForm, MentoringOpportunityForm,
     Opportunities, Requests, ShowOpp, ShowReqest, SearchMentee, SearchMentor, Selectlist
 }
