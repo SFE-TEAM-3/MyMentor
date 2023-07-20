@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import OppInfo from '../oppInfo/OppInfo';
 import './content.css'
 
-const Content = () => {
+const OpportunityPage = () => {
   return (
     <div className='p-2'>
         <Container>
@@ -27,4 +27,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default OpportunityPage

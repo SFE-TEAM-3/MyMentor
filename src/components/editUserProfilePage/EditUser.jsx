@@ -17,7 +17,7 @@ import './data.json'
 // ================================================
 
 
-const PersonalInfo = () => {
+const EditUser = () => {
 
   // logic start -----------
   
@@ -414,4 +414,4 @@ const PersonalInfo = () => {
   )
 }
  
-export default PersonalInfo;
+export default EditUser;

@@ -9,19 +9,19 @@ import Home from "./components/homepage/Home";
 import Wizard from './components/registerationWizardPage/Wizard';
 import Mentee from './components/searchResultPage/Mentee';
 import Mentor from './components/searchResultPage/Mentor';
-import Content from './components/content/Content'
-import RequestMentor2 from "./components/requestShowPage/RequestMentor2";
+import OpportunityPage from './components/content/OpportunityPage'
+import RequestShowPage from "./components/requestShowPage/RequestShowPage";
 import Opportunities from './components/searchResultPage/Opportunities';
 import Selectlist from './components/searchResultPage/selectList';
 import Requests from './components/searchResultPage/Requests';
 import MentorReqForm from "./components/formsPages/MentorReqForm";
 import ContactUs from './components/contactPage/ContactUs';
 import MentoringOpportunities from "./components/oppourtunityandRequestPage/MentoringOpportunities";
-import PersonalInfo from './components/editUserProfilePage/PersonalInfo'
 import MentoringOpportunityForm from "./components/formsPages/MentorOppForm";
 import MentoringRequest from "./components/oppourtunityandRequestPage/MentoringRequest";
 import Profile from "./components/userProfilePage/Profile";
 import ForgetPassword from "./components/loginregisterPages/ForgetPassword";
+import EditUser from './components/editUserProfilePage/EditUser';
 const Router = () => {
   return (
     <div><Routes >
@@ -47,8 +47,8 @@ const Router = () => {
     {/* end search page */}
     {/* <Route path="/" element={<MentoringOpportunities/>}/> */}
     {/* mentor oppourtunites and request show pages */}
-      <Route path="/oppShowPage" element={<Content/>}/>
-      <Route path="/reqShowPage" element={<RequestMentor2/>}/>
+      <Route path="/oppShowPage" element={<OpportunityPage/>}/>
+      <Route path="/reqShowPage" element={<RequestShowPage/>}/>
 
      {/* mentor oppourtunites and request show pages */} 
     {/* forms */}
@@ -63,7 +63,7 @@ const Router = () => {
         <Route path="/external" element={<Profile/>}/>
     {/* end user profile */}
     {/* edit user page */}
-      <Route path='/edituser' element={<PersonalInfo/>}/>
+      <Route path='/edituser' element={<EditUser/>}/>
     {/* end edit user page */}
     {/* contact us page */}
      <Route path='/contactus' element={<ContactUs/>}/>

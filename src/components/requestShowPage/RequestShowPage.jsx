@@ -9,7 +9,7 @@ import Comments from '../comments/Comments'
 // import Comments from '../comments/Comments'
 
 
-function RequestMentor2() {
+function RequestShowPage() {
   return (
 
     <div className='RequestMentor2'> 
@@ -240,4 +240,4 @@ function RequestMentor2() {
 }
 
 
-export default RequestMentor2
+export default RequestShowPage
