@@ -47,7 +47,7 @@ const MyNavbar = () => {
                   <Form className="d-flex flex-column-reverse flex-sm-row me-2">
                     <div className='me-1' style={{
                       border: '1px solid #808080a3',
-                      height: '50px',
+                      height: '38px',
                       borderTopLeftRadius: '20px',
                       borderBottomLeftRadius: '18px'
                     }}>
@@ -66,8 +66,9 @@ const MyNavbar = () => {
                         className="me-1"
                         aria-label="Search"
                       />
-                      <Button className='btn btn-dark rounded-circle'>
-                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                      <Button className='btn btn-dark rounded-circle' style={{padding: '6px'}}>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} style={{fontSize: '15px',
+                          marginBottom: '4px'}}/>
                       </Button>
                     </div>
                   </Form>

@@ -1,0 +1,25 @@
+.--profile-head{
+    background-image: url(../../assets/images/colored_background.jpg);
+    background-repeat: round;
+    background-size: cover;
+}
+.--icon-not{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-left: 10px;
+}
+.--user-skills span{
+    background-color: #007580a1;
+    padding: 7px 16px;
+    border-radius: 13px;
+    color: white;
+    margin-right: 5px;
+}
+.react-calendar{
+    border: none !important;
+}

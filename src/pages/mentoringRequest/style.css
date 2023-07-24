@@ -70,12 +70,6 @@
   .first-input {
     width: 40%;
   }
-  .main-data-select {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: flex-start;
-    align-items: flex-end; */
-  }
   .select-diagram {
     display: grid;
     grid-template-columns: 40% 40%;

@@ -66,7 +66,7 @@ const filterArr = [
         location: "cairo"
     }
 ]
-const RequestsFilter = (props) => {
+const RequestsFilter = (props,className) => {
     let filterProductList = filterArr.filter((mentee) => {
         let x;
         if (props.Paid && props.Availlable) {
